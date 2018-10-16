@@ -1,0 +1,7 @@
+C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Console_Projekte\Polymorphismus_abstract\bin\Debug\Polymorphismus.exe.config
+C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Console_Projekte\Polymorphismus_abstract\bin\Debug\Polymorphismus.exe
+C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Console_Projekte\Polymorphismus_abstract\bin\Debug\Polymorphismus.pdb
+C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Console_Projekte\Polymorphismus_abstract\obj\Debug\Polymorphismus_abstract.csprojAssemblyReference.cache
+C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Console_Projekte\Polymorphismus_abstract\obj\Debug\Polymorphismus_abstract.csproj.CoreCompileInputs.cache
+C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Console_Projekte\Polymorphismus_abstract\obj\Debug\Polymorphismus.exe
+C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Console_Projekte\Polymorphismus_abstract\obj\Debug\Polymorphismus.pdb

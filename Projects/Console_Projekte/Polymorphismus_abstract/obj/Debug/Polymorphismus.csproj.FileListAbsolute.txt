@@ -1,0 +1,7 @@
+D:\Softwareentwicklung\C#\3AHIT\Polymorphismus\bin\Debug\Polymorphismus.exe.config
+D:\Softwareentwicklung\C#\3AHIT\Polymorphismus\bin\Debug\Polymorphismus.exe
+D:\Softwareentwicklung\C#\3AHIT\Polymorphismus\bin\Debug\Polymorphismus.pdb
+D:\Softwareentwicklung\C#\3AHIT\Polymorphismus\obj\Debug\Polymorphismus.csproj.CoreCompileInputs.cache
+D:\Softwareentwicklung\C#\3AHIT\Polymorphismus\obj\Debug\Polymorphismus.exe
+D:\Softwareentwicklung\C#\3AHIT\Polymorphismus\obj\Debug\Polymorphismus.pdb
+D:\Softwareentwicklung\C#\3AHIT\Polymorphismus\obj\Debug\Polymorphismus.csprojAssemblyReference.cache
