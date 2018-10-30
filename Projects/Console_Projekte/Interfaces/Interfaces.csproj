@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{15AD69AD-359E-4D91-9783-CBE96C57A576}</ProjectGuid>
+    <ProjectGuid>{EC6AF741-9F41-4B78-85AC-15BA32556E77}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Polymorphismus</RootNamespace>
     <AssemblyName>Polymorphismus</AssemblyName>
@@ -50,7 +50,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rectangle.cs" />
+    <Compile Include="Shape.cs" />
+    <Compile Include="Shape1D.cs" />
     <Compile Include="Shape2D.cs" />
+    <Compile Include="Shape3D.cs" />
+    <Compile Include="StraightLine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

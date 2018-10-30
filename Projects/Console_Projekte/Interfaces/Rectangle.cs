@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace Polymorphismus
 {
-    class Rectangle : Shape2D
+    class Rectangle : Shape2D, IInfo, IScalable
     {
         //Variables
         private double a;
         private double b;
 
         //Constructors
-        public Rectangle(double a, double b, double x, double y) { this.A = a; this.B = b; this.X = x; this.Y = y; }
-        public Rectangle(double a, double b) : this(a, b, 0, 0) { }
-        public Rectangle(string name, string c, double a, double b, double x, double y) : base(name, c)
+        public Rectangle(string name, string c, double density, double a, double b, double x, double y) : base(name, c, density)
         { this.A = a; this.B = b; this.X = x; this.Y = y; }
 
         //Properties
@@ -26,6 +24,17 @@ namespace Polymorphismus
 
         //Methods
         public override void Draw() { Console.WriteLine("Draving a Rectangle..."); }
+
+        public string GetShapeInfo()
+        {
+            return "This is a rectangle";
+        }
+
+        public void Scale(double factor)
+        {
+            A *= factor;
+            B *= factor;
+        }
 
         public override double Area { get { return a * b; } }
         public override double Circumference { get { return (a+b)*2; } }

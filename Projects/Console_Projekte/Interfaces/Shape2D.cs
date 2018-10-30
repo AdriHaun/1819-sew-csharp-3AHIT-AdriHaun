@@ -6,25 +6,14 @@ using System.Threading.Tasks;
 
 namespace Polymorphismus
 {
-    public abstract class Shape2D : IMaterial
+    abstract class Shape2D : Shape, IMaterial
     {
-        //Variables & Properties
-        private string color;
-        public string Color { get { return color; } set { color = value; } }
+        public Shape2D(string c, string n, double density) : base(c, n) { this.Density = density; }
 
-        private string name;
-        public string Name { get { return name; } set { name = value; } }
+        public abstract double Area { get;}
+        public abstract double Circumference { get;}
 
-        //Ctors
-        public Shape2D(string name, string c, double Density) { this.name = name; this.color = c; }
-        public Shape2D() { }
-
-        //Methods
-        public abstract void Draw ();
-
-        public abstract double Area { get; }
-        public abstract double Circumference { get ; }
-        public abstract double Density { get; set; }
+        public double Density { get; set; }
         public double Mass { get { return Area * Density; } }
     }
 }
