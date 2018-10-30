@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI-Logger", "DI-Logger\DI-Logger.csproj", "{921DD77C-F2B1-47FC-A2A3-4CBD4E85AC52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{921DD77C-F2B1-47FC-A2A3-4CBD4E85AC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921DD77C-F2B1-47FC-A2A3-4CBD4E85AC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921DD77C-F2B1-47FC-A2A3-4CBD4E85AC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921DD77C-F2B1-47FC-A2A3-4CBD4E85AC52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C9250D4-AA61-44A9-84D5-6EA416FA45AB}
+	EndGlobalSection
+EndGlobal
