@@ -15,7 +15,7 @@ namespace Polymorphismus
         private string name;
         public string Name { get { return name; } set { name = value; } }
 
-        //Ctors
+        //Constructors
         public Shape2D(string name, string c) { this.name = name; this.color = c; }
         public Shape2D() { }
 

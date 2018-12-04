@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Polymorphismus.Shape2DOverrideable">
+  <Class Name="Polymorphismus.Shape2D">
     <Position X="5" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAwAAAAEAACAAAAAgQAAAAA=</HashCode>
-      <FileName>Shape2DOverrideable.cs</FileName>
+      <FileName>Shape2D.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Polymorphismus.Rectangle">
-    <Position X="3.5" Y="4.5" Width="1.5" />
+    <Position X="4" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAABQAAAQUAYAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAgAQAAIQEAYAA=</HashCode>
       <FileName>Rectangle.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Polymorphismus.Oval">
-    <Position X="6.5" Y="4.5" Width="1.5" />
+    <Position X="6.25" Y="4.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
@@ -25,7 +25,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Polymorphismus.Circle">
-    <Position X="8.75" Y="4.5" Width="1.5" />
+    <Position X="8.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAAAAABAQAAAQA=</HashCode>
       <FileName>Circle.cs</FileName>
