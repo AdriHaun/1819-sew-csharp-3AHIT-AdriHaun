@@ -71,7 +71,7 @@ namespace PointCoords
         public List<Point> GetFromFileBin(string path)
         {   // Read binary file
             this.path = path;
-            Point p=new Point();
+            Point p = new Point();
             FileStream fs = new FileStream(path, FileMode.Open);
             BinaryReader br = new BinaryReader(fs);
           

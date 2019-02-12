@@ -17,20 +17,27 @@ namespace PointCoords
     public partial class Form1 : Form
     {
         PointReader myPointReader;
-        //ReferencePointComparer myComparePoint;
-
+        ReferencePointComparer myComparePoint;
+    
         
         public Form1()
         {
             InitializeComponent();
             myPointReader = new PointReader();
-            //myComparePoint = new ReferencePointComparer(0, 0);
+            myComparePoint = new ReferencePointComparer(0, 0);
         }
 
         private void cmdSaveCoords_Click(object sender, EventArgs e)
         {
-            myPointReader.AddPoint(System.Convert.ToDouble(txtXcoords.Text), System.Convert.ToDouble(txtYcoords.Text));
-            txtXcoords.Text = ""; txtYcoords.Text = ""; txtXcoords.Focus();
+            try
+            {
+                myPointReader.AddPoint(System.Convert.ToDouble(txtXcoords.Text), System.Convert.ToDouble(txtYcoords.Text));
+                txtXcoords.Text = ""; txtYcoords.Text = ""; txtXcoords.Focus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void cmdAusgabe_Click(object sender, EventArgs e)
@@ -88,11 +95,11 @@ namespace PointCoords
             }
             catch (IndexOutOfRangeException ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -102,24 +109,24 @@ namespace PointCoords
             {
                 if (txtXref.Text != "" && txtYref.Text != "")
                 {
-                    //myComparePoint.X = Convert.ToDouble(txtXref.Text);
-                    //myComparePoint.Y = Convert.ToDouble(txtYref.Text);
+                    myComparePoint.X = Convert.ToDouble(txtXref.Text);
+                    myComparePoint.Y = Convert.ToDouble(txtYref.Text);
                 }
 
                 // Nutzt IComparable und CompareTo()
                 // Variante 1: ergänzen
-                myPointReader.PointList.Sort();
+                // myPointReader.PointList.Sort();
 
                 // Vergleich mit Referenzpunkt myComparePoint
-                // Nutzt IComparer und Compare()
-
+                // Nutzt IComparer und Compare()              
                 // Variante 2: ergänzen
-
+                myPointReader.PointList.Sort(myComparePoint);
+             
             }
             catch (ApplicationException ex)
-            { MessageBox.Show(ex.Message); }
+            { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             catch (Exception ex)
-            { MessageBox.Show(ex.Message); }
+            { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         
         } // Sort
     }
