@@ -10,6 +10,7 @@ namespace Team_Serializer
         public string LastName { get; set; }
         public PersonInfo Info;
 
+        public Person() { }
         public Person(double age, string firstname, string lastname, int id)
         {
             Age = age; FirstName = firstname; LastName = lastname; Info = new PersonInfo(id);
