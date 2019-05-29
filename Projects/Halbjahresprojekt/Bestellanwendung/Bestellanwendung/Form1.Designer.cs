@@ -31,34 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.cmdBurger = new System.Windows.Forms.Button();
             this.pnlLeftSide = new System.Windows.Forms.Panel();
-            this.pnlBurger = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pnlHamburger = new System.Windows.Forms.Panel();
-            this.lblHamburger = new System.Windows.Forms.Label();
-            this.cmdHamburger = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxBurger = new System.Windows.Forms.PictureBox();
+            this.pbxWrap = new System.Windows.Forms.PictureBox();
+            this.pbxChicken = new System.Windows.Forms.PictureBox();
+            this.pbxDrinks = new System.Windows.Forms.PictureBox();
+            this.pbxDesserts = new System.Windows.Forms.PictureBox();
+            this.pbxCart = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -70,22 +48,68 @@
             this.cmdCart = new System.Windows.Forms.Button();
             this.cmdChicken = new System.Windows.Forms.Button();
             this.cmdWraps = new System.Windows.Forms.Button();
+            this.pnlMain = new System.Windows.Forms.Panel();
+            this.pnlBottomRight = new System.Windows.Forms.Panel();
+            this.pbxBottomRightVeg = new System.Windows.Forms.PictureBox();
+            this.lblBottomRightAllergy = new System.Windows.Forms.Label();
+            this.lblBottomRightPrice = new System.Windows.Forms.Label();
+            this.lblBottomRight = new System.Windows.Forms.Label();
+            this.cmdBottomRight = new System.Windows.Forms.Button();
+            this.pnlBottomMid = new System.Windows.Forms.Panel();
+            this.pbxBottomMidVeg = new System.Windows.Forms.PictureBox();
+            this.lblBottomMidAllergy = new System.Windows.Forms.Label();
+            this.lblBottomMidPrice = new System.Windows.Forms.Label();
+            this.lblBottomMid = new System.Windows.Forms.Label();
+            this.cmdBottomMid = new System.Windows.Forms.Button();
+            this.pnlBottomLeft = new System.Windows.Forms.Panel();
+            this.pbxBottomLeftVeg = new System.Windows.Forms.PictureBox();
+            this.lblBottomLeftAllergy = new System.Windows.Forms.Label();
+            this.lblBottomLeftPrice = new System.Windows.Forms.Label();
+            this.lblBottomLeft = new System.Windows.Forms.Label();
+            this.cmdBottomLeft = new System.Windows.Forms.Button();
+            this.pnlTopRight = new System.Windows.Forms.Panel();
+            this.pbxTopRightVeg = new System.Windows.Forms.PictureBox();
+            this.lblTopRightAllergy = new System.Windows.Forms.Label();
+            this.lblTopRightPrice = new System.Windows.Forms.Label();
+            this.lblTopRightName = new System.Windows.Forms.Label();
+            this.cmdTopRight = new System.Windows.Forms.Button();
+            this.pnlTopMid = new System.Windows.Forms.Panel();
+            this.pbxTopMidVeg = new System.Windows.Forms.PictureBox();
+            this.lblTopMidAllergy = new System.Windows.Forms.Label();
+            this.lblTopMidPrice = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lblTopMidName = new System.Windows.Forms.Label();
+            this.cmdTopMid = new System.Windows.Forms.Button();
+            this.pnlTopLeft = new System.Windows.Forms.Panel();
+            this.pbxTopLeftVeg = new System.Windows.Forms.PictureBox();
+            this.lblTopLeftAllergy = new System.Windows.Forms.Label();
+            this.lblTopLeftPrice = new System.Windows.Forms.Label();
+            this.lblTopLeftName = new System.Windows.Forms.Label();
+            this.cmdTopLeft = new System.Windows.Forms.Button();
             this.pnlTopSide = new System.Windows.Forms.Panel();
             this.pnlLeftSide.SuspendLayout();
-            this.pnlBurger.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBurger)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxWrap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxChicken)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrinks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDesserts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCart)).BeginInit();
+            this.pnlMain.SuspendLayout();
+            this.pnlBottomRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBottomRightVeg)).BeginInit();
+            this.pnlBottomMid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBottomMidVeg)).BeginInit();
+            this.pnlBottomLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBottomLeftVeg)).BeginInit();
+            this.pnlTopRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopRightVeg)).BeginInit();
+            this.pnlTopMid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopMidVeg)).BeginInit();
             this.panel8.SuspendLayout();
-            this.pnlHamburger.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlTopLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopLeftVeg)).BeginInit();
             this.SuspendLayout();
             // 
             // cmdBurger
@@ -109,12 +133,12 @@
             // pnlLeftSide
             // 
             this.pnlLeftSide.BackColor = System.Drawing.Color.Firebrick;
-            this.pnlLeftSide.Controls.Add(this.pictureBox6);
-            this.pnlLeftSide.Controls.Add(this.pictureBox5);
-            this.pnlLeftSide.Controls.Add(this.pictureBox4);
-            this.pnlLeftSide.Controls.Add(this.pictureBox3);
-            this.pnlLeftSide.Controls.Add(this.pictureBox2);
-            this.pnlLeftSide.Controls.Add(this.pictureBox1);
+            this.pnlLeftSide.Controls.Add(this.pbxBurger);
+            this.pnlLeftSide.Controls.Add(this.pbxWrap);
+            this.pnlLeftSide.Controls.Add(this.pbxChicken);
+            this.pnlLeftSide.Controls.Add(this.pbxDrinks);
+            this.pnlLeftSide.Controls.Add(this.pbxDesserts);
+            this.pnlLeftSide.Controls.Add(this.pbxCart);
             this.pnlLeftSide.Controls.Add(this.panel6);
             this.pnlLeftSide.Controls.Add(this.panel5);
             this.pnlLeftSide.Controls.Add(this.panel4);
@@ -130,305 +154,74 @@
             this.pnlLeftSide.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeftSide.Location = new System.Drawing.Point(0, 0);
             this.pnlLeftSide.Name = "pnlLeftSide";
-            this.pnlLeftSide.Size = new System.Drawing.Size(196, 541);
+            this.pnlLeftSide.Size = new System.Drawing.Size(196, 589);
             this.pnlLeftSide.TabIndex = 1;
             // 
-            // pnlBurger
+            // pbxBurger
             // 
-            this.pnlBurger.BackColor = System.Drawing.Color.Gold;
-            this.pnlBurger.Controls.Add(this.panel12);
-            this.pnlBurger.Controls.Add(this.panel11);
-            this.pnlBurger.Controls.Add(this.panel10);
-            this.pnlBurger.Controls.Add(this.panel9);
-            this.pnlBurger.Controls.Add(this.panel7);
-            this.pnlBurger.Controls.Add(this.pnlHamburger);
-            this.pnlBurger.Location = new System.Drawing.Point(196, 51);
-            this.pnlBurger.Name = "pnlBurger";
-            this.pnlBurger.Size = new System.Drawing.Size(746, 490);
-            this.pnlBurger.TabIndex = 3;
-            this.pnlBurger.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBurger_Paint);
+            this.pbxBurger.BackColor = System.Drawing.Color.Transparent;
+            this.pbxBurger.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxBurger.BackgroundImage")));
+            this.pbxBurger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxBurger.Location = new System.Drawing.Point(18, 98);
+            this.pbxBurger.Name = "pbxBurger";
+            this.pbxBurger.Size = new System.Drawing.Size(40, 33);
+            this.pbxBurger.TabIndex = 5;
+            this.pbxBurger.TabStop = false;
             // 
-            // panel12
+            // pbxWrap
             // 
-            this.panel12.Controls.Add(this.label6);
-            this.panel12.Controls.Add(this.button6);
-            this.panel12.Location = new System.Drawing.Point(521, 286);
-            this.panel12.Name = "panel12";
-            this.panel12.Padding = new System.Windows.Forms.Padding(5);
-            this.panel12.Size = new System.Drawing.Size(180, 175);
-            this.panel12.TabIndex = 5;
+            this.pbxWrap.BackColor = System.Drawing.Color.Transparent;
+            this.pbxWrap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxWrap.BackgroundImage")));
+            this.pbxWrap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxWrap.Location = new System.Drawing.Point(18, 139);
+            this.pbxWrap.Name = "pbxWrap";
+            this.pbxWrap.Size = new System.Drawing.Size(40, 33);
+            this.pbxWrap.TabIndex = 5;
+            this.pbxWrap.TabStop = false;
             // 
-            // label6
+            // pbxChicken
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 14);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Krabbenburgerburger";
+            this.pbxChicken.BackColor = System.Drawing.Color.Transparent;
+            this.pbxChicken.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxChicken.BackgroundImage")));
+            this.pbxChicken.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxChicken.Location = new System.Drawing.Point(18, 180);
+            this.pbxChicken.Name = "pbxChicken";
+            this.pbxChicken.Size = new System.Drawing.Size(40, 33);
+            this.pbxChicken.TabIndex = 5;
+            this.pbxChicken.TabStop = false;
             // 
-            // button6
+            // pbxDrinks
             // 
-            this.button6.BackColor = System.Drawing.Color.Crimson;
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(31, 36);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(114, 123);
-            this.button6.TabIndex = 0;
-            this.button6.UseVisualStyleBackColor = false;
+            this.pbxDrinks.BackColor = System.Drawing.Color.Transparent;
+            this.pbxDrinks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxDrinks.BackgroundImage")));
+            this.pbxDrinks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxDrinks.Location = new System.Drawing.Point(18, 220);
+            this.pbxDrinks.Name = "pbxDrinks";
+            this.pbxDrinks.Size = new System.Drawing.Size(40, 33);
+            this.pbxDrinks.TabIndex = 5;
+            this.pbxDrinks.TabStop = false;
             // 
-            // panel11
+            // pbxDesserts
             // 
-            this.panel11.Controls.Add(this.label5);
-            this.panel11.Controls.Add(this.button5);
-            this.panel11.Location = new System.Drawing.Point(282, 286);
-            this.panel11.Name = "panel11";
-            this.panel11.Padding = new System.Windows.Forms.Padding(5);
-            this.panel11.Size = new System.Drawing.Size(180, 175);
-            this.panel11.TabIndex = 4;
+            this.pbxDesserts.BackColor = System.Drawing.Color.Transparent;
+            this.pbxDesserts.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxDesserts.BackgroundImage")));
+            this.pbxDesserts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxDesserts.Location = new System.Drawing.Point(18, 261);
+            this.pbxDesserts.Name = "pbxDesserts";
+            this.pbxDesserts.Size = new System.Drawing.Size(40, 33);
+            this.pbxDesserts.TabIndex = 4;
+            this.pbxDesserts.TabStop = false;
             // 
-            // label5
+            // pbxCart
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(55, 14);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Veggieburger";
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Crimson;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(31, 36);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 123);
-            this.button5.TabIndex = 0;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.label4);
-            this.panel10.Controls.Add(this.button4);
-            this.panel10.Location = new System.Drawing.Point(42, 286);
-            this.panel10.Name = "panel10";
-            this.panel10.Padding = new System.Windows.Forms.Padding(5);
-            this.panel10.Size = new System.Drawing.Size(180, 175);
-            this.panel10.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(56, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Cheseburger";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Crimson;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(31, 36);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(114, 123);
-            this.button4.TabIndex = 0;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.label3);
-            this.panel9.Controls.Add(this.button3);
-            this.panel9.Location = new System.Drawing.Point(521, 52);
-            this.panel9.Name = "panel9";
-            this.panel9.Padding = new System.Windows.Forms.Padding(5);
-            this.panel9.Size = new System.Drawing.Size(180, 175);
-            this.panel9.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Fishburger";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Crimson;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(31, 36);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 123);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Controls.Add(this.label1);
-            this.panel7.Controls.Add(this.button1);
-            this.panel7.Location = new System.Drawing.Point(282, 52);
-            this.panel7.Name = "panel7";
-            this.panel7.Padding = new System.Windows.Forms.Padding(5);
-            this.panel7.Size = new System.Drawing.Size(180, 175);
-            this.panel7.TabIndex = 1;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Location = new System.Drawing.Point(181, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Padding = new System.Windows.Forms.Padding(5);
-            this.panel8.Size = new System.Drawing.Size(180, 175);
-            this.panel8.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Hamburger";
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::Bestellanwendung.Properties.Resources.Cart_512;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(31, 36);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 123);
-            this.button2.TabIndex = 0;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Chicken Burger";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Crimson;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(31, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 123);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pnlHamburger
-            // 
-            this.pnlHamburger.Controls.Add(this.lblHamburger);
-            this.pnlHamburger.Controls.Add(this.cmdHamburger);
-            this.pnlHamburger.Location = new System.Drawing.Point(42, 52);
-            this.pnlHamburger.Name = "pnlHamburger";
-            this.pnlHamburger.Padding = new System.Windows.Forms.Padding(5);
-            this.pnlHamburger.Size = new System.Drawing.Size(180, 175);
-            this.pnlHamburger.TabIndex = 0;
-            // 
-            // lblHamburger
-            // 
-            this.lblHamburger.AutoSize = true;
-            this.lblHamburger.Location = new System.Drawing.Point(61, 14);
-            this.lblHamburger.Name = "lblHamburger";
-            this.lblHamburger.Size = new System.Drawing.Size(59, 13);
-            this.lblHamburger.TabIndex = 1;
-            this.lblHamburger.Text = "Hamburger";
-            // 
-            // cmdHamburger
-            // 
-            this.cmdHamburger.BackColor = System.Drawing.Color.Crimson;
-            this.cmdHamburger.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdHamburger.BackgroundImage")));
-            this.cmdHamburger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmdHamburger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdHamburger.Location = new System.Drawing.Point(31, 36);
-            this.cmdHamburger.Name = "cmdHamburger";
-            this.cmdHamburger.Size = new System.Drawing.Size(114, 123);
-            this.cmdHamburger.TabIndex = 0;
-            this.cmdHamburger.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(18, 98);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(40, 33);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(18, 139);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(40, 33);
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(18, 180);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(40, 33);
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(18, 220);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 33);
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 261);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 33);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(18, 302);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 33);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.pbxCart.BackColor = System.Drawing.Color.Transparent;
+            this.pbxCart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxCart.BackgroundImage")));
+            this.pbxCart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxCart.Location = new System.Drawing.Point(18, 302);
+            this.pbxCart.Name = "pbxCart";
+            this.pbxCart.Size = new System.Drawing.Size(40, 33);
+            this.pbxCart.TabIndex = 3;
+            this.pbxCart.TabStop = false;
             // 
             // panel6
             // 
@@ -554,6 +347,418 @@
             this.cmdWraps.UseVisualStyleBackColor = true;
             this.cmdWraps.Click += new System.EventHandler(this.cmdWraps_Click);
             // 
+            // pnlMain
+            // 
+            this.pnlMain.BackColor = System.Drawing.Color.Gold;
+            this.pnlMain.Controls.Add(this.pnlBottomRight);
+            this.pnlMain.Controls.Add(this.pnlBottomMid);
+            this.pnlMain.Controls.Add(this.pnlBottomLeft);
+            this.pnlMain.Controls.Add(this.pnlTopRight);
+            this.pnlMain.Controls.Add(this.pnlTopMid);
+            this.pnlMain.Controls.Add(this.pnlTopLeft);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMain.Location = new System.Drawing.Point(196, 51);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(746, 538);
+            this.pnlMain.TabIndex = 3;
+            // 
+            // pnlBottomRight
+            // 
+            this.pnlBottomRight.BackColor = System.Drawing.Color.Yellow;
+            this.pnlBottomRight.Controls.Add(this.pbxBottomRightVeg);
+            this.pnlBottomRight.Controls.Add(this.lblBottomRightAllergy);
+            this.pnlBottomRight.Controls.Add(this.lblBottomRightPrice);
+            this.pnlBottomRight.Controls.Add(this.lblBottomRight);
+            this.pnlBottomRight.Controls.Add(this.cmdBottomRight);
+            this.pnlBottomRight.Location = new System.Drawing.Point(521, 286);
+            this.pnlBottomRight.Name = "pnlBottomRight";
+            this.pnlBottomRight.Padding = new System.Windows.Forms.Padding(5);
+            this.pnlBottomRight.Size = new System.Drawing.Size(180, 204);
+            this.pnlBottomRight.TabIndex = 5;
+            // 
+            // pbxBottomRightVeg
+            // 
+            this.pbxBottomRightVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxBottomRightVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxBottomRightVeg.Name = "pbxBottomRightVeg";
+            this.pbxBottomRightVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxBottomRightVeg.TabIndex = 7;
+            this.pbxBottomRightVeg.TabStop = false;
+            // 
+            // lblBottomRightAllergy
+            // 
+            this.lblBottomRightAllergy.AutoSize = true;
+            this.lblBottomRightAllergy.Location = new System.Drawing.Point(98, 170);
+            this.lblBottomRightAllergy.Name = "lblBottomRightAllergy";
+            this.lblBottomRightAllergy.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomRightAllergy.TabIndex = 7;
+            this.lblBottomRightAllergy.Text = " ";
+            // 
+            // lblBottomRightPrice
+            // 
+            this.lblBottomRightPrice.AutoSize = true;
+            this.lblBottomRightPrice.Location = new System.Drawing.Point(29, 170);
+            this.lblBottomRightPrice.Name = "lblBottomRightPrice";
+            this.lblBottomRightPrice.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomRightPrice.TabIndex = 6;
+            this.lblBottomRightPrice.Text = " ";
+            // 
+            // lblBottomRight
+            // 
+            this.lblBottomRight.AutoSize = true;
+            this.lblBottomRight.Location = new System.Drawing.Point(29, 14);
+            this.lblBottomRight.Name = "lblBottomRight";
+            this.lblBottomRight.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomRight.TabIndex = 1;
+            this.lblBottomRight.Text = " ";
+            // 
+            // cmdBottomRight
+            // 
+            this.cmdBottomRight.BackColor = System.Drawing.Color.Crimson;
+            this.cmdBottomRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdBottomRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdBottomRight.Location = new System.Drawing.Point(32, 36);
+            this.cmdBottomRight.Name = "cmdBottomRight";
+            this.cmdBottomRight.Size = new System.Drawing.Size(114, 123);
+            this.cmdBottomRight.TabIndex = 0;
+            this.cmdBottomRight.UseVisualStyleBackColor = false;
+            // 
+            // pnlBottomMid
+            // 
+            this.pnlBottomMid.BackColor = System.Drawing.Color.Yellow;
+            this.pnlBottomMid.Controls.Add(this.pbxBottomMidVeg);
+            this.pnlBottomMid.Controls.Add(this.lblBottomMidAllergy);
+            this.pnlBottomMid.Controls.Add(this.lblBottomMidPrice);
+            this.pnlBottomMid.Controls.Add(this.lblBottomMid);
+            this.pnlBottomMid.Controls.Add(this.cmdBottomMid);
+            this.pnlBottomMid.Location = new System.Drawing.Point(282, 286);
+            this.pnlBottomMid.Name = "pnlBottomMid";
+            this.pnlBottomMid.Padding = new System.Windows.Forms.Padding(5);
+            this.pnlBottomMid.Size = new System.Drawing.Size(180, 204);
+            this.pnlBottomMid.TabIndex = 4;
+            // 
+            // pbxBottomMidVeg
+            // 
+            this.pbxBottomMidVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxBottomMidVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxBottomMidVeg.Name = "pbxBottomMidVeg";
+            this.pbxBottomMidVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxBottomMidVeg.TabIndex = 7;
+            this.pbxBottomMidVeg.TabStop = false;
+            // 
+            // lblBottomMidAllergy
+            // 
+            this.lblBottomMidAllergy.AutoSize = true;
+            this.lblBottomMidAllergy.Location = new System.Drawing.Point(98, 170);
+            this.lblBottomMidAllergy.Name = "lblBottomMidAllergy";
+            this.lblBottomMidAllergy.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomMidAllergy.TabIndex = 7;
+            this.lblBottomMidAllergy.Text = " ";
+            // 
+            // lblBottomMidPrice
+            // 
+            this.lblBottomMidPrice.AutoSize = true;
+            this.lblBottomMidPrice.Location = new System.Drawing.Point(29, 170);
+            this.lblBottomMidPrice.Name = "lblBottomMidPrice";
+            this.lblBottomMidPrice.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomMidPrice.TabIndex = 6;
+            this.lblBottomMidPrice.Text = " ";
+            // 
+            // lblBottomMid
+            // 
+            this.lblBottomMid.AutoSize = true;
+            this.lblBottomMid.Location = new System.Drawing.Point(29, 14);
+            this.lblBottomMid.Name = "lblBottomMid";
+            this.lblBottomMid.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomMid.TabIndex = 1;
+            this.lblBottomMid.Text = " ";
+            // 
+            // cmdBottomMid
+            // 
+            this.cmdBottomMid.BackColor = System.Drawing.Color.Crimson;
+            this.cmdBottomMid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdBottomMid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdBottomMid.Location = new System.Drawing.Point(32, 36);
+            this.cmdBottomMid.Name = "cmdBottomMid";
+            this.cmdBottomMid.Size = new System.Drawing.Size(114, 123);
+            this.cmdBottomMid.TabIndex = 0;
+            this.cmdBottomMid.UseVisualStyleBackColor = false;
+            // 
+            // pnlBottomLeft
+            // 
+            this.pnlBottomLeft.BackColor = System.Drawing.Color.Yellow;
+            this.pnlBottomLeft.Controls.Add(this.pbxBottomLeftVeg);
+            this.pnlBottomLeft.Controls.Add(this.lblBottomLeftAllergy);
+            this.pnlBottomLeft.Controls.Add(this.lblBottomLeftPrice);
+            this.pnlBottomLeft.Controls.Add(this.lblBottomLeft);
+            this.pnlBottomLeft.Controls.Add(this.cmdBottomLeft);
+            this.pnlBottomLeft.Location = new System.Drawing.Point(42, 288);
+            this.pnlBottomLeft.Name = "pnlBottomLeft";
+            this.pnlBottomLeft.Padding = new System.Windows.Forms.Padding(5);
+            this.pnlBottomLeft.Size = new System.Drawing.Size(180, 202);
+            this.pnlBottomLeft.TabIndex = 3;
+            // 
+            // pbxBottomLeftVeg
+            // 
+            this.pbxBottomLeftVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxBottomLeftVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxBottomLeftVeg.Name = "pbxBottomLeftVeg";
+            this.pbxBottomLeftVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxBottomLeftVeg.TabIndex = 7;
+            this.pbxBottomLeftVeg.TabStop = false;
+            // 
+            // lblBottomLeftAllergy
+            // 
+            this.lblBottomLeftAllergy.AutoSize = true;
+            this.lblBottomLeftAllergy.Location = new System.Drawing.Point(98, 168);
+            this.lblBottomLeftAllergy.Name = "lblBottomLeftAllergy";
+            this.lblBottomLeftAllergy.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomLeftAllergy.TabIndex = 7;
+            this.lblBottomLeftAllergy.Text = " ";
+            // 
+            // lblBottomLeftPrice
+            // 
+            this.lblBottomLeftPrice.AutoSize = true;
+            this.lblBottomLeftPrice.Location = new System.Drawing.Point(29, 168);
+            this.lblBottomLeftPrice.Name = "lblBottomLeftPrice";
+            this.lblBottomLeftPrice.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomLeftPrice.TabIndex = 6;
+            this.lblBottomLeftPrice.Text = " ";
+            // 
+            // lblBottomLeft
+            // 
+            this.lblBottomLeft.AutoSize = true;
+            this.lblBottomLeft.Location = new System.Drawing.Point(29, 14);
+            this.lblBottomLeft.Name = "lblBottomLeft";
+            this.lblBottomLeft.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomLeft.TabIndex = 1;
+            this.lblBottomLeft.Text = " ";
+            // 
+            // cmdBottomLeft
+            // 
+            this.cmdBottomLeft.BackColor = System.Drawing.Color.Crimson;
+            this.cmdBottomLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdBottomLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdBottomLeft.Location = new System.Drawing.Point(32, 36);
+            this.cmdBottomLeft.Name = "cmdBottomLeft";
+            this.cmdBottomLeft.Size = new System.Drawing.Size(114, 123);
+            this.cmdBottomLeft.TabIndex = 0;
+            this.cmdBottomLeft.UseVisualStyleBackColor = false;
+            // 
+            // pnlTopRight
+            // 
+            this.pnlTopRight.BackColor = System.Drawing.Color.Yellow;
+            this.pnlTopRight.Controls.Add(this.pbxTopRightVeg);
+            this.pnlTopRight.Controls.Add(this.lblTopRightAllergy);
+            this.pnlTopRight.Controls.Add(this.lblTopRightPrice);
+            this.pnlTopRight.Controls.Add(this.lblTopRightName);
+            this.pnlTopRight.Controls.Add(this.cmdTopRight);
+            this.pnlTopRight.Location = new System.Drawing.Point(521, 52);
+            this.pnlTopRight.Name = "pnlTopRight";
+            this.pnlTopRight.Padding = new System.Windows.Forms.Padding(5);
+            this.pnlTopRight.Size = new System.Drawing.Size(180, 202);
+            this.pnlTopRight.TabIndex = 2;
+            // 
+            // pbxTopRightVeg
+            // 
+            this.pbxTopRightVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxTopRightVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxTopRightVeg.Name = "pbxTopRightVeg";
+            this.pbxTopRightVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxTopRightVeg.TabIndex = 7;
+            this.pbxTopRightVeg.TabStop = false;
+            // 
+            // lblTopRightAllergy
+            // 
+            this.lblTopRightAllergy.AutoSize = true;
+            this.lblTopRightAllergy.Location = new System.Drawing.Point(98, 169);
+            this.lblTopRightAllergy.Name = "lblTopRightAllergy";
+            this.lblTopRightAllergy.Size = new System.Drawing.Size(10, 13);
+            this.lblTopRightAllergy.TabIndex = 5;
+            this.lblTopRightAllergy.Text = " ";
+            // 
+            // lblTopRightPrice
+            // 
+            this.lblTopRightPrice.AutoSize = true;
+            this.lblTopRightPrice.Location = new System.Drawing.Point(29, 169);
+            this.lblTopRightPrice.Name = "lblTopRightPrice";
+            this.lblTopRightPrice.Size = new System.Drawing.Size(10, 13);
+            this.lblTopRightPrice.TabIndex = 4;
+            this.lblTopRightPrice.Text = " ";
+            // 
+            // lblTopRightName
+            // 
+            this.lblTopRightName.AutoSize = true;
+            this.lblTopRightName.Location = new System.Drawing.Point(29, 14);
+            this.lblTopRightName.Name = "lblTopRightName";
+            this.lblTopRightName.Size = new System.Drawing.Size(10, 13);
+            this.lblTopRightName.TabIndex = 1;
+            this.lblTopRightName.Text = " ";
+            // 
+            // cmdTopRight
+            // 
+            this.cmdTopRight.BackColor = System.Drawing.Color.Crimson;
+            this.cmdTopRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdTopRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdTopRight.Location = new System.Drawing.Point(32, 36);
+            this.cmdTopRight.Name = "cmdTopRight";
+            this.cmdTopRight.Size = new System.Drawing.Size(114, 123);
+            this.cmdTopRight.TabIndex = 0;
+            this.cmdTopRight.UseVisualStyleBackColor = false;
+            // 
+            // pnlTopMid
+            // 
+            this.pnlTopMid.BackColor = System.Drawing.Color.Yellow;
+            this.pnlTopMid.Controls.Add(this.pbxTopMidVeg);
+            this.pnlTopMid.Controls.Add(this.lblTopMidAllergy);
+            this.pnlTopMid.Controls.Add(this.lblTopMidPrice);
+            this.pnlTopMid.Controls.Add(this.panel8);
+            this.pnlTopMid.Controls.Add(this.lblTopMidName);
+            this.pnlTopMid.Controls.Add(this.cmdTopMid);
+            this.pnlTopMid.Location = new System.Drawing.Point(282, 52);
+            this.pnlTopMid.Name = "pnlTopMid";
+            this.pnlTopMid.Padding = new System.Windows.Forms.Padding(5);
+            this.pnlTopMid.Size = new System.Drawing.Size(180, 202);
+            this.pnlTopMid.TabIndex = 1;
+            // 
+            // pbxTopMidVeg
+            // 
+            this.pbxTopMidVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxTopMidVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxTopMidVeg.Name = "pbxTopMidVeg";
+            this.pbxTopMidVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxTopMidVeg.TabIndex = 7;
+            this.pbxTopMidVeg.TabStop = false;
+            // 
+            // lblTopMidAllergy
+            // 
+            this.lblTopMidAllergy.AutoSize = true;
+            this.lblTopMidAllergy.Location = new System.Drawing.Point(98, 169);
+            this.lblTopMidAllergy.Name = "lblTopMidAllergy";
+            this.lblTopMidAllergy.Size = new System.Drawing.Size(10, 13);
+            this.lblTopMidAllergy.TabIndex = 5;
+            this.lblTopMidAllergy.Text = " ";
+            // 
+            // lblTopMidPrice
+            // 
+            this.lblTopMidPrice.AutoSize = true;
+            this.lblTopMidPrice.Location = new System.Drawing.Point(29, 169);
+            this.lblTopMidPrice.Name = "lblTopMidPrice";
+            this.lblTopMidPrice.Size = new System.Drawing.Size(10, 13);
+            this.lblTopMidPrice.TabIndex = 4;
+            this.lblTopMidPrice.Text = " ";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.label2);
+            this.panel8.Controls.Add(this.button2);
+            this.panel8.Location = new System.Drawing.Point(181, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Padding = new System.Windows.Forms.Padding(5);
+            this.panel8.Size = new System.Drawing.Size(180, 175);
+            this.panel8.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(61, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Hamburger";
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::Bestellanwendung.Properties.Resources.Cart_512;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Location = new System.Drawing.Point(31, 36);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 123);
+            this.button2.TabIndex = 0;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // lblTopMidName
+            // 
+            this.lblTopMidName.AutoSize = true;
+            this.lblTopMidName.Location = new System.Drawing.Point(29, 14);
+            this.lblTopMidName.Name = "lblTopMidName";
+            this.lblTopMidName.Size = new System.Drawing.Size(10, 13);
+            this.lblTopMidName.TabIndex = 1;
+            this.lblTopMidName.Text = " ";
+            // 
+            // cmdTopMid
+            // 
+            this.cmdTopMid.BackColor = System.Drawing.Color.Crimson;
+            this.cmdTopMid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdTopMid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdTopMid.Location = new System.Drawing.Point(32, 36);
+            this.cmdTopMid.Name = "cmdTopMid";
+            this.cmdTopMid.Size = new System.Drawing.Size(114, 123);
+            this.cmdTopMid.TabIndex = 0;
+            this.cmdTopMid.UseVisualStyleBackColor = false;
+            // 
+            // pnlTopLeft
+            // 
+            this.pnlTopLeft.BackColor = System.Drawing.Color.Yellow;
+            this.pnlTopLeft.Controls.Add(this.pbxTopLeftVeg);
+            this.pnlTopLeft.Controls.Add(this.lblTopLeftAllergy);
+            this.pnlTopLeft.Controls.Add(this.lblTopLeftPrice);
+            this.pnlTopLeft.Controls.Add(this.lblTopLeftName);
+            this.pnlTopLeft.Controls.Add(this.cmdTopLeft);
+            this.pnlTopLeft.Location = new System.Drawing.Point(42, 52);
+            this.pnlTopLeft.Name = "pnlTopLeft";
+            this.pnlTopLeft.Padding = new System.Windows.Forms.Padding(5);
+            this.pnlTopLeft.Size = new System.Drawing.Size(180, 202);
+            this.pnlTopLeft.TabIndex = 0;
+            // 
+            // pbxTopLeftVeg
+            // 
+            this.pbxTopLeftVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxTopLeftVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxTopLeftVeg.Name = "pbxTopLeftVeg";
+            this.pbxTopLeftVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxTopLeftVeg.TabIndex = 6;
+            this.pbxTopLeftVeg.TabStop = false;
+            // 
+            // lblTopLeftAllergy
+            // 
+            this.lblTopLeftAllergy.AutoSize = true;
+            this.lblTopLeftAllergy.Location = new System.Drawing.Point(102, 169);
+            this.lblTopLeftAllergy.Name = "lblTopLeftAllergy";
+            this.lblTopLeftAllergy.Size = new System.Drawing.Size(10, 13);
+            this.lblTopLeftAllergy.TabIndex = 3;
+            this.lblTopLeftAllergy.Text = " ";
+            // 
+            // lblTopLeftPrice
+            // 
+            this.lblTopLeftPrice.AutoSize = true;
+            this.lblTopLeftPrice.Location = new System.Drawing.Point(29, 169);
+            this.lblTopLeftPrice.Name = "lblTopLeftPrice";
+            this.lblTopLeftPrice.Size = new System.Drawing.Size(10, 13);
+            this.lblTopLeftPrice.TabIndex = 2;
+            this.lblTopLeftPrice.Text = " ";
+            // 
+            // lblTopLeftName
+            // 
+            this.lblTopLeftName.AutoSize = true;
+            this.lblTopLeftName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTopLeftName.Location = new System.Drawing.Point(29, 14);
+            this.lblTopLeftName.Name = "lblTopLeftName";
+            this.lblTopLeftName.Size = new System.Drawing.Size(10, 13);
+            this.lblTopLeftName.TabIndex = 1;
+            this.lblTopLeftName.Text = " ";
+            // 
+            // cmdTopLeft
+            // 
+            this.cmdTopLeft.BackColor = System.Drawing.Color.Crimson;
+            this.cmdTopLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdTopLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdTopLeft.Location = new System.Drawing.Point(32, 36);
+            this.cmdTopLeft.Name = "cmdTopLeft";
+            this.cmdTopLeft.Size = new System.Drawing.Size(114, 123);
+            this.cmdTopLeft.TabIndex = 0;
+            this.cmdTopLeft.UseVisualStyleBackColor = false;
+            // 
             // pnlTopSide
             // 
             this.pnlTopSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -567,35 +772,40 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 541);
-            this.Controls.Add(this.pnlBurger);
+            this.ClientSize = new System.Drawing.Size(942, 589);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlTopSide);
             this.Controls.Add(this.pnlLeftSide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmMain";
-            this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlLeftSide.ResumeLayout(false);
-            this.pnlBurger.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBurger)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxWrap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxChicken)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrinks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDesserts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCart)).EndInit();
+            this.pnlMain.ResumeLayout(false);
+            this.pnlBottomRight.ResumeLayout(false);
+            this.pnlBottomRight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBottomRightVeg)).EndInit();
+            this.pnlBottomMid.ResumeLayout(false);
+            this.pnlBottomMid.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBottomMidVeg)).EndInit();
+            this.pnlBottomLeft.ResumeLayout(false);
+            this.pnlBottomLeft.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBottomLeftVeg)).EndInit();
+            this.pnlTopRight.ResumeLayout(false);
+            this.pnlTopRight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopRightVeg)).EndInit();
+            this.pnlTopMid.ResumeLayout(false);
+            this.pnlTopMid.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopMidVeg)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.pnlHamburger.ResumeLayout(false);
-            this.pnlHamburger.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlTopLeft.ResumeLayout(false);
+            this.pnlTopLeft.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopLeftVeg)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -616,34 +826,52 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel pnlBurger;
-        private System.Windows.Forms.Panel pnlHamburger;
-        private System.Windows.Forms.Button cmdHamburger;
-        private System.Windows.Forms.Label lblHamburger;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pbxCart;
+        private System.Windows.Forms.PictureBox pbxBurger;
+        private System.Windows.Forms.PictureBox pbxWrap;
+        private System.Windows.Forms.PictureBox pbxChicken;
+        private System.Windows.Forms.PictureBox pbxDrinks;
+        private System.Windows.Forms.PictureBox pbxDesserts;
+        private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.Panel pnlTopLeft;
+        private System.Windows.Forms.Button cmdTopLeft;
+        private System.Windows.Forms.Label lblTopLeftName;
+        private System.Windows.Forms.Panel pnlBottomLeft;
+        private System.Windows.Forms.Label lblBottomLeft;
+        private System.Windows.Forms.Button cmdBottomLeft;
+        private System.Windows.Forms.Panel pnlTopRight;
+        private System.Windows.Forms.Label lblTopRightName;
+        private System.Windows.Forms.Button cmdTopRight;
+        private System.Windows.Forms.Panel pnlTopMid;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label lblTopMidName;
+        private System.Windows.Forms.Button cmdTopMid;
+        private System.Windows.Forms.Panel pnlBottomRight;
+        private System.Windows.Forms.Label lblBottomRight;
+        private System.Windows.Forms.Button cmdBottomRight;
+        private System.Windows.Forms.Panel pnlBottomMid;
+        private System.Windows.Forms.Label lblBottomMid;
+        private System.Windows.Forms.Button cmdBottomMid;
+        private System.Windows.Forms.Label lblTopLeftAllergy;
+        private System.Windows.Forms.Label lblTopLeftPrice;
+        private System.Windows.Forms.Label lblTopRightAllergy;
+        private System.Windows.Forms.Label lblTopRightPrice;
+        private System.Windows.Forms.Label lblTopMidAllergy;
+        private System.Windows.Forms.Label lblTopMidPrice;
+        private System.Windows.Forms.Label lblBottomRightAllergy;
+        private System.Windows.Forms.Label lblBottomRightPrice;
+        private System.Windows.Forms.PictureBox pbxBottomRightVeg;
+        private System.Windows.Forms.PictureBox pbxBottomMidVeg;
+        private System.Windows.Forms.Label lblBottomMidAllergy;
+        private System.Windows.Forms.Label lblBottomMidPrice;
+        private System.Windows.Forms.PictureBox pbxBottomLeftVeg;
+        private System.Windows.Forms.Label lblBottomLeftAllergy;
+        private System.Windows.Forms.Label lblBottomLeftPrice;
+        private System.Windows.Forms.PictureBox pbxTopRightVeg;
+        private System.Windows.Forms.PictureBox pbxTopMidVeg;
+        private System.Windows.Forms.PictureBox pbxTopLeftVeg;
     }
 }
 
