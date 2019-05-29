@@ -45,7 +45,7 @@ namespace Bestellanwendung
             lblTopRightAllergy.Text = burgerArray[2].Allergy;
             cmdTopRight.BackgroundImage = new Bitmap(burgerArray[2].Path);
 
-            /*
+            
             if (burgerArray[0].Veg == true) pbxTopLeftVeg.BackgroundImage = new Bitmap(veg);
             lblTopLeftName.Text = burgerArray[0].Name;
             lblTopLeftPrice.Text = Convert.ToString(burgerArray[0].Price) + " €";
@@ -63,7 +63,7 @@ namespace Bestellanwendung
             lblTopRightPrice.Text = Convert.ToString(burgerArray[2].Price) + " €";
             lblTopRightAllergy.Text = burgerArray[2].Allergy;
             cmdTopRight.BackgroundImage = new Bitmap(burgerArray[2].Path);
-            +/
+            
 
         }
 
