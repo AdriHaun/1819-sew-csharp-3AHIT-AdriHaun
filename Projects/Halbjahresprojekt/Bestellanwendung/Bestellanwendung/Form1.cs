@@ -20,6 +20,7 @@ namespace Bestellanwendung
 
         private void cmdBurger_Click(object sender, EventArgs e)
         {
+            #region Initialisation
             pbxTopLeftVeg.BackgroundImage = null;
             pbxTopMidVeg.BackgroundImage = null;
             pbxTopRightVeg.BackgroundImage = null;
@@ -30,10 +31,11 @@ namespace Bestellanwendung
             CSVPharser pharser = new CSVPharser();
             string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Burger.csv";
             string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
+            #endregion
             burger = pharser.CSVToList(path);
             Nahrung[] burgerArray = burger.ToArray();
             int length = burgerArray.GetLength(0);
-
+            #region SettingLogic
             if (length >= 1)
             {
                 if (burgerArray[0].Veg == true) pbxTopLeftVeg.BackgroundImage = new Bitmap(veg);
@@ -94,10 +96,12 @@ namespace Bestellanwendung
                 pnlBottomRight.Visible = true;
             }
             else pnlBottomRight.Visible = false;
+            #endregion
         }
 
         private void cmdWraps_Click(object sender, EventArgs e)
         {
+            #region Initialisation
             pbxTopLeftVeg.BackgroundImage = null;
             pbxTopMidVeg.BackgroundImage = null;
             pbxTopRightVeg.BackgroundImage = null;
@@ -108,10 +112,11 @@ namespace Bestellanwendung
             CSVPharser pharser = new CSVPharser();
             string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Wrap.csv";
             string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
+            #endregion
             wrap = pharser.CSVToList(path);
             Nahrung[] wrapArray = wrap.ToArray();
             int length = wrapArray.GetLength(0);
-
+            #region SettingLogic
             if (length >= 1)
             {
                 if (wrapArray[0].Veg == true) pbxTopLeftVeg.BackgroundImage = new Bitmap(veg);
@@ -172,6 +177,7 @@ namespace Bestellanwendung
                 pnlBottomRight.Visible = true;
             }
             else pnlBottomRight.Visible = false;
+            #endregion
         }
 
         private void cmdChicken_Click(object sender, EventArgs e)
