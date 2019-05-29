@@ -15,17 +15,16 @@ namespace Bestellanwendung
         public frmMain()
         {
             InitializeComponent();
-            pnlBurger.Visible = true;
+            pnlBurger.BringToFront();
         }
 
         private void cmdBurger_Click(object sender, EventArgs e)
         {
-            pnlBurger.Visible = true;
+            cmdHamburger.BackgroundImage = new Bitmap(@"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Burger\Chickenburger.png");
         }
 
         private void cmdWraps_Click(object sender, EventArgs e)
         {
-
         }
 
         private void cmdChicken_Click(object sender, EventArgs e)
@@ -44,6 +43,16 @@ namespace Bestellanwendung
         }
 
         private void cmdCart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlBurger_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
         {
 
         }

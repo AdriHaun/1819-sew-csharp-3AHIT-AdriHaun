@@ -1,0 +1,15 @@
+Name; Path; Price; Veggie(?); Allergene;
+
+Hamburger; @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Burger\Hamburger.png"; 2.30; false; ;
+Cheseburger; @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Burger\Cheseburger.png"; 2.50; false; ;
+Chickenburger; @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Burger\Chickenburger.png"; 2.70; false; ;
+Fishburger; @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Burger\Fishburger.png"; 2.30; false; ;
+Veggieburger; @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Burger\Veggieburger.png"; 2.70; true; ;
+Krabbenburger; @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Burger\Krabbenburger.png"; 3.00; false; ;
+
+A für glutenhaltiges Getreide
+B für Krebstiere- und -erzeugnisse
+D für Fisch- und Fischerzeugnisse (außer Fischgelatine)
+G für Milch und Milcherzeugnisse (inklusive Laktose)
+M für Senf- und Senferzeugnisse
+N für Senf- und Senferzeugnisse

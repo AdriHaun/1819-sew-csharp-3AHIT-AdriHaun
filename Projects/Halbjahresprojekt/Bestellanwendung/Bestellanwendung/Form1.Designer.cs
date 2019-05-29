@@ -31,6 +31,28 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.cmdBurger = new System.Windows.Forms.Button();
             this.pnlLeftSide = new System.Windows.Forms.Panel();
+            this.pnlBurger = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pnlHamburger = new System.Windows.Forms.Panel();
+            this.lblHamburger = new System.Windows.Forms.Label();
+            this.cmdHamburger = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -49,18 +71,21 @@
             this.cmdChicken = new System.Windows.Forms.Button();
             this.cmdWraps = new System.Windows.Forms.Button();
             this.pnlTopSide = new System.Windows.Forms.Panel();
-            this.pnlBurger = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnlLeftSide.SuspendLayout();
+            this.pnlBurger.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.pnlHamburger.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlBurger.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmdBurger
@@ -105,8 +130,239 @@
             this.pnlLeftSide.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeftSide.Location = new System.Drawing.Point(0, 0);
             this.pnlLeftSide.Name = "pnlLeftSide";
-            this.pnlLeftSide.Size = new System.Drawing.Size(200, 588);
+            this.pnlLeftSide.Size = new System.Drawing.Size(196, 541);
             this.pnlLeftSide.TabIndex = 1;
+            // 
+            // pnlBurger
+            // 
+            this.pnlBurger.BackColor = System.Drawing.Color.Gold;
+            this.pnlBurger.Controls.Add(this.panel12);
+            this.pnlBurger.Controls.Add(this.panel11);
+            this.pnlBurger.Controls.Add(this.panel10);
+            this.pnlBurger.Controls.Add(this.panel9);
+            this.pnlBurger.Controls.Add(this.panel7);
+            this.pnlBurger.Controls.Add(this.pnlHamburger);
+            this.pnlBurger.Location = new System.Drawing.Point(196, 51);
+            this.pnlBurger.Name = "pnlBurger";
+            this.pnlBurger.Size = new System.Drawing.Size(746, 490);
+            this.pnlBurger.TabIndex = 3;
+            this.pnlBurger.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBurger_Paint);
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.label6);
+            this.panel12.Controls.Add(this.button6);
+            this.panel12.Location = new System.Drawing.Point(521, 286);
+            this.panel12.Name = "panel12";
+            this.panel12.Padding = new System.Windows.Forms.Padding(5);
+            this.panel12.Size = new System.Drawing.Size(180, 175);
+            this.panel12.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(34, 14);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(107, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Krabbenburgerburger";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Crimson;
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(31, 36);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(114, 123);
+            this.button6.TabIndex = 0;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.label5);
+            this.panel11.Controls.Add(this.button5);
+            this.panel11.Location = new System.Drawing.Point(282, 286);
+            this.panel11.Name = "panel11";
+            this.panel11.Padding = new System.Windows.Forms.Padding(5);
+            this.panel11.Size = new System.Drawing.Size(180, 175);
+            this.panel11.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(55, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Veggieburger";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Crimson;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(31, 36);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(114, 123);
+            this.button5.TabIndex = 0;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label4);
+            this.panel10.Controls.Add(this.button4);
+            this.panel10.Location = new System.Drawing.Point(42, 286);
+            this.panel10.Name = "panel10";
+            this.panel10.Padding = new System.Windows.Forms.Padding(5);
+            this.panel10.Size = new System.Drawing.Size(180, 175);
+            this.panel10.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(56, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Cheseburger";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Crimson;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(31, 36);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(114, 123);
+            this.button4.TabIndex = 0;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.label3);
+            this.panel9.Controls.Add(this.button3);
+            this.panel9.Location = new System.Drawing.Point(521, 52);
+            this.panel9.Name = "panel9";
+            this.panel9.Padding = new System.Windows.Forms.Padding(5);
+            this.panel9.Size = new System.Drawing.Size(180, 175);
+            this.panel9.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(60, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Fishburger";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Crimson;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(31, 36);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(114, 123);
+            this.button3.TabIndex = 0;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Controls.Add(this.label1);
+            this.panel7.Controls.Add(this.button1);
+            this.panel7.Location = new System.Drawing.Point(282, 52);
+            this.panel7.Name = "panel7";
+            this.panel7.Padding = new System.Windows.Forms.Padding(5);
+            this.panel7.Size = new System.Drawing.Size(180, 175);
+            this.panel7.TabIndex = 1;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.label2);
+            this.panel8.Controls.Add(this.button2);
+            this.panel8.Location = new System.Drawing.Point(181, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Padding = new System.Windows.Forms.Padding(5);
+            this.panel8.Size = new System.Drawing.Size(180, 175);
+            this.panel8.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(61, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Hamburger";
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::Bestellanwendung.Properties.Resources.Cart_512;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Location = new System.Drawing.Point(31, 36);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 123);
+            this.button2.TabIndex = 0;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(48, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Chicken Burger";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(31, 36);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 123);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // pnlHamburger
+            // 
+            this.pnlHamburger.Controls.Add(this.lblHamburger);
+            this.pnlHamburger.Controls.Add(this.cmdHamburger);
+            this.pnlHamburger.Location = new System.Drawing.Point(42, 52);
+            this.pnlHamburger.Name = "pnlHamburger";
+            this.pnlHamburger.Padding = new System.Windows.Forms.Padding(5);
+            this.pnlHamburger.Size = new System.Drawing.Size(180, 175);
+            this.pnlHamburger.TabIndex = 0;
+            // 
+            // lblHamburger
+            // 
+            this.lblHamburger.AutoSize = true;
+            this.lblHamburger.Location = new System.Drawing.Point(61, 14);
+            this.lblHamburger.Name = "lblHamburger";
+            this.lblHamburger.Size = new System.Drawing.Size(59, 13);
+            this.lblHamburger.TabIndex = 1;
+            this.lblHamburger.Text = "Hamburger";
+            // 
+            // cmdHamburger
+            // 
+            this.cmdHamburger.BackColor = System.Drawing.Color.Crimson;
+            this.cmdHamburger.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdHamburger.BackgroundImage")));
+            this.cmdHamburger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdHamburger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdHamburger.Location = new System.Drawing.Point(31, 36);
+            this.cmdHamburger.Name = "cmdHamburger";
+            this.cmdHamburger.Size = new System.Drawing.Size(114, 123);
+            this.cmdHamburger.TabIndex = 0;
+            this.cmdHamburger.UseVisualStyleBackColor = false;
             // 
             // pictureBox6
             // 
@@ -302,55 +558,44 @@
             // 
             this.pnlTopSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.pnlTopSide.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTopSide.Location = new System.Drawing.Point(200, 0);
+            this.pnlTopSide.Location = new System.Drawing.Point(196, 0);
             this.pnlTopSide.Name = "pnlTopSide";
-            this.pnlTopSide.Size = new System.Drawing.Size(1008, 41);
+            this.pnlTopSide.Size = new System.Drawing.Size(746, 51);
             this.pnlTopSide.TabIndex = 2;
-            // 
-            // pnlBurger
-            // 
-            this.pnlBurger.Controls.Add(this.panel10);
-            this.pnlBurger.Location = new System.Drawing.Point(200, 44);
-            this.pnlBurger.Name = "pnlBurger";
-            this.pnlBurger.Size = new System.Drawing.Size(1008, 544);
-            this.pnlBurger.TabIndex = 3;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.button1);
-            this.panel10.Location = new System.Drawing.Point(42, 38);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(169, 179);
-            this.panel10.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Bestellanwendung.Properties.Resources.Cart_512;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(31, 47);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 111);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1208, 588);
+            this.ClientSize = new System.Drawing.Size(942, 541);
             this.Controls.Add(this.pnlBurger);
             this.Controls.Add(this.pnlTopSide);
             this.Controls.Add(this.pnlLeftSide);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmMain";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlLeftSide.ResumeLayout(false);
+            this.pnlBurger.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.pnlHamburger.ResumeLayout(false);
+            this.pnlHamburger.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlBurger.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -378,8 +623,27 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnlBurger;
+        private System.Windows.Forms.Panel pnlHamburger;
+        private System.Windows.Forms.Button cmdHamburger;
+        private System.Windows.Forms.Label lblHamburger;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button5;
     }
 }
 
