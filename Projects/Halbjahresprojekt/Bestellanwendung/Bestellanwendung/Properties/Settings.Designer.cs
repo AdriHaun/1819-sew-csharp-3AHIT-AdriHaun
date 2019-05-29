@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bestellprogramm.Properties
+namespace Bestellanwendung.Properties
 {
 
 
