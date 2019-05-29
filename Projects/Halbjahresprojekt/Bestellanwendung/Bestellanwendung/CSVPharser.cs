@@ -6,9 +6,9 @@ using System.Windows.Forms;
 namespace Bestellanwendung
 {
     public class CSVPharser{
-        public List<Burger> CSVToList(string path)
+        public List<Nahrung> CSVToList(string path)
         {
-            List<Burger> burger = new List<Burger>();
+            List<Nahrung> burger = new List<Nahrung>();
             string line;
             StreamReader CSV = new StreamReader(path);
             for(int i = 0; i < 9; i++)
@@ -22,7 +22,7 @@ namespace Bestellanwendung
                 data = line.Split(';');
                 try
                 {
-                    Burger A = new Burger(data[0], data[1], Convert.ToDouble(data[2]), Convert.ToBoolean(data[3]), data[4]);
+                    Nahrung A = new Nahrung(data[0], data[1], Convert.ToDouble(data[2]), Convert.ToBoolean(data[3]), data[4]);
                     burger.Add(A);
                 }
                 catch

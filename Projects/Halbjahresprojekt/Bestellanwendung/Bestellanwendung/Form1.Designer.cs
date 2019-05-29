@@ -53,19 +53,19 @@
             this.pbxBottomRightVeg = new System.Windows.Forms.PictureBox();
             this.lblBottomRightAllergy = new System.Windows.Forms.Label();
             this.lblBottomRightPrice = new System.Windows.Forms.Label();
-            this.lblBottomRight = new System.Windows.Forms.Label();
+            this.lblBottomRightName = new System.Windows.Forms.Label();
             this.cmdBottomRight = new System.Windows.Forms.Button();
             this.pnlBottomMid = new System.Windows.Forms.Panel();
             this.pbxBottomMidVeg = new System.Windows.Forms.PictureBox();
             this.lblBottomMidAllergy = new System.Windows.Forms.Label();
             this.lblBottomMidPrice = new System.Windows.Forms.Label();
-            this.lblBottomMid = new System.Windows.Forms.Label();
+            this.lblBottomMidName = new System.Windows.Forms.Label();
             this.cmdBottomMid = new System.Windows.Forms.Button();
             this.pnlBottomLeft = new System.Windows.Forms.Panel();
             this.pbxBottomLeftVeg = new System.Windows.Forms.PictureBox();
             this.lblBottomLeftAllergy = new System.Windows.Forms.Label();
             this.lblBottomLeftPrice = new System.Windows.Forms.Label();
-            this.lblBottomLeft = new System.Windows.Forms.Label();
+            this.lblBottomLeftName = new System.Windows.Forms.Label();
             this.cmdBottomLeft = new System.Windows.Forms.Button();
             this.pnlTopRight = new System.Windows.Forms.Panel();
             this.pbxTopRightVeg = new System.Windows.Forms.PictureBox();
@@ -368,7 +368,7 @@
             this.pnlBottomRight.Controls.Add(this.pbxBottomRightVeg);
             this.pnlBottomRight.Controls.Add(this.lblBottomRightAllergy);
             this.pnlBottomRight.Controls.Add(this.lblBottomRightPrice);
-            this.pnlBottomRight.Controls.Add(this.lblBottomRight);
+            this.pnlBottomRight.Controls.Add(this.lblBottomRightName);
             this.pnlBottomRight.Controls.Add(this.cmdBottomRight);
             this.pnlBottomRight.Location = new System.Drawing.Point(521, 286);
             this.pnlBottomRight.Name = "pnlBottomRight";
@@ -403,14 +403,14 @@
             this.lblBottomRightPrice.TabIndex = 6;
             this.lblBottomRightPrice.Text = " ";
             // 
-            // lblBottomRight
+            // lblBottomRightName
             // 
-            this.lblBottomRight.AutoSize = true;
-            this.lblBottomRight.Location = new System.Drawing.Point(29, 14);
-            this.lblBottomRight.Name = "lblBottomRight";
-            this.lblBottomRight.Size = new System.Drawing.Size(10, 13);
-            this.lblBottomRight.TabIndex = 1;
-            this.lblBottomRight.Text = " ";
+            this.lblBottomRightName.AutoSize = true;
+            this.lblBottomRightName.Location = new System.Drawing.Point(29, 14);
+            this.lblBottomRightName.Name = "lblBottomRightName";
+            this.lblBottomRightName.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomRightName.TabIndex = 1;
+            this.lblBottomRightName.Text = " ";
             // 
             // cmdBottomRight
             // 
@@ -429,7 +429,7 @@
             this.pnlBottomMid.Controls.Add(this.pbxBottomMidVeg);
             this.pnlBottomMid.Controls.Add(this.lblBottomMidAllergy);
             this.pnlBottomMid.Controls.Add(this.lblBottomMidPrice);
-            this.pnlBottomMid.Controls.Add(this.lblBottomMid);
+            this.pnlBottomMid.Controls.Add(this.lblBottomMidName);
             this.pnlBottomMid.Controls.Add(this.cmdBottomMid);
             this.pnlBottomMid.Location = new System.Drawing.Point(282, 286);
             this.pnlBottomMid.Name = "pnlBottomMid";
@@ -464,14 +464,14 @@
             this.lblBottomMidPrice.TabIndex = 6;
             this.lblBottomMidPrice.Text = " ";
             // 
-            // lblBottomMid
+            // lblBottomMidName
             // 
-            this.lblBottomMid.AutoSize = true;
-            this.lblBottomMid.Location = new System.Drawing.Point(29, 14);
-            this.lblBottomMid.Name = "lblBottomMid";
-            this.lblBottomMid.Size = new System.Drawing.Size(10, 13);
-            this.lblBottomMid.TabIndex = 1;
-            this.lblBottomMid.Text = " ";
+            this.lblBottomMidName.AutoSize = true;
+            this.lblBottomMidName.Location = new System.Drawing.Point(29, 14);
+            this.lblBottomMidName.Name = "lblBottomMidName";
+            this.lblBottomMidName.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomMidName.TabIndex = 1;
+            this.lblBottomMidName.Text = " ";
             // 
             // cmdBottomMid
             // 
@@ -490,7 +490,7 @@
             this.pnlBottomLeft.Controls.Add(this.pbxBottomLeftVeg);
             this.pnlBottomLeft.Controls.Add(this.lblBottomLeftAllergy);
             this.pnlBottomLeft.Controls.Add(this.lblBottomLeftPrice);
-            this.pnlBottomLeft.Controls.Add(this.lblBottomLeft);
+            this.pnlBottomLeft.Controls.Add(this.lblBottomLeftName);
             this.pnlBottomLeft.Controls.Add(this.cmdBottomLeft);
             this.pnlBottomLeft.Location = new System.Drawing.Point(42, 288);
             this.pnlBottomLeft.Name = "pnlBottomLeft";
@@ -525,14 +525,14 @@
             this.lblBottomLeftPrice.TabIndex = 6;
             this.lblBottomLeftPrice.Text = " ";
             // 
-            // lblBottomLeft
+            // lblBottomLeftName
             // 
-            this.lblBottomLeft.AutoSize = true;
-            this.lblBottomLeft.Location = new System.Drawing.Point(29, 14);
-            this.lblBottomLeft.Name = "lblBottomLeft";
-            this.lblBottomLeft.Size = new System.Drawing.Size(10, 13);
-            this.lblBottomLeft.TabIndex = 1;
-            this.lblBottomLeft.Text = " ";
+            this.lblBottomLeftName.AutoSize = true;
+            this.lblBottomLeftName.Location = new System.Drawing.Point(29, 14);
+            this.lblBottomLeftName.Name = "lblBottomLeftName";
+            this.lblBottomLeftName.Size = new System.Drawing.Size(10, 13);
+            this.lblBottomLeftName.TabIndex = 1;
+            this.lblBottomLeftName.Text = " ";
             // 
             // cmdBottomLeft
             // 
@@ -837,7 +837,7 @@
         private System.Windows.Forms.Button cmdTopLeft;
         private System.Windows.Forms.Label lblTopLeftName;
         private System.Windows.Forms.Panel pnlBottomLeft;
-        private System.Windows.Forms.Label lblBottomLeft;
+        private System.Windows.Forms.Label lblBottomLeftName;
         private System.Windows.Forms.Button cmdBottomLeft;
         private System.Windows.Forms.Panel pnlTopRight;
         private System.Windows.Forms.Label lblTopRightName;
@@ -849,10 +849,10 @@
         private System.Windows.Forms.Label lblTopMidName;
         private System.Windows.Forms.Button cmdTopMid;
         private System.Windows.Forms.Panel pnlBottomRight;
-        private System.Windows.Forms.Label lblBottomRight;
+        private System.Windows.Forms.Label lblBottomRightName;
         private System.Windows.Forms.Button cmdBottomRight;
         private System.Windows.Forms.Panel pnlBottomMid;
-        private System.Windows.Forms.Label lblBottomMid;
+        private System.Windows.Forms.Label lblBottomMidName;
         private System.Windows.Forms.Button cmdBottomMid;
         private System.Windows.Forms.Label lblTopLeftAllergy;
         private System.Windows.Forms.Label lblTopLeftPrice;
