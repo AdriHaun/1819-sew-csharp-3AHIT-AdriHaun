@@ -1,0 +1,15 @@
+A für glutenhaltiges Getreide
+B für Krebstiere- und -erzeugnisse
+D für Fisch- und Fischerzeugnisse (außer Fischgelatine)
+G für Milch und Milcherzeugnisse (inklusive Laktose)
+M für Senf- und Senferzeugnisse
+N für Sesam-Samen und –erzeugnisse
+
+Name; Path; Price; Veggie(?); Allergene;
+
+Chips; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\SideDishes\Chips.png; 1,50; true; ;
+Spiral Chips; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\SideDishes\SpiralChips.png; 1,70; true; A;
+Mozzarella Sticks; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\SideDishes\MozzarellaSticks.png; 1,90; true; A G;
+Onion Rings; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\SideDishes\OnionRings.png; 1,70; true; A;
+Chicken Nuggets; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\SideDishes\ChickenNuggets.png; 2,00; false; N;
+Mixed Salad; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\SideDishes\MixedSalad.png; 2,20; true; ;

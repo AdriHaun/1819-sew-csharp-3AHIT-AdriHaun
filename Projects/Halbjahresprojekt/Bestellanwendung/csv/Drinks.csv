@@ -1,0 +1,14 @@
+								A für glutenhaltiges Getreide
+								B für Krebstiere- und -erzeugnisse
+								D für Fisch- und Fischerzeugnisse (außer Fischgelatine)
+								G für Milch und Milcherzeugnisse (inklusive Laktose)
+								M für Senf- und Senferzeugnisse
+								N für Sesam-Samen und –erzeugnisse
+
+Name; Path; Price; Veggie(?); Allergene;
+
+Coke; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Drinks\Coke.png; 1,00; true; ;
+Fanta; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Drinks\Fanta.png; 1,00; true; ;
+Sprite; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Drinks\Sprite.png; 1,00; true; ;
+Milk Shake; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Drinks\MilkShake.png; 1,80; true; G;
+Coffee; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Drinks\Coffee.png; 1,40; false; G;
