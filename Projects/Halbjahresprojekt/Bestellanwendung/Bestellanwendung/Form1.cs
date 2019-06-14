@@ -12,6 +12,19 @@ namespace Bestellanwendung
 {
     public partial class frmMain : Form
     {
+        public string sheet = "";
+        List<Nahrung> burger = new List<Nahrung>();
+        List<Nahrung> wrap = new List<Nahrung>();
+        List<Nahrung> sidedishes = new List<Nahrung>();
+        List<Nahrung> drinks = new List<Nahrung>();
+        List<Nahrung> desserts = new List<Nahrung>();
+        List<Nahrung> Cart = new List<Nahrung>();
+        Nahrung[] burgerArray = new Nahrung[12];
+        Nahrung[] wrapArray = new Nahrung[12];
+        Nahrung[] sidedishesArray = new Nahrung[12];
+        Nahrung[] drinksArray = new Nahrung[12];
+        Nahrung[] dessertsArray = new Nahrung[12];
+
         public frmMain()
         {
             InitializeComponent();
@@ -22,7 +35,10 @@ namespace Bestellanwendung
             pnlBottomLeft.Visible = false;
             pnlBottomMid.Visible = false;
             pnlBottomRight.Visible = false;
+            lbxCart.Visible = false;
         }
+
+        
 
         private void cmdBurger_Click(object sender, EventArgs e)
         {
@@ -34,20 +50,21 @@ namespace Bestellanwendung
             pbxBottomMidVeg.BackgroundImage = null;
             pbxBottomRightVeg.BackgroundImage = null;
 
-            pnlWrap.BackColor = Color.OrangeRed;
-            pnlSideDishes.BackColor = Color.OrangeRed;
-            pnlDrinks.BackColor = Color.OrangeRed;
-            pnlDesserts.BackColor = Color.OrangeRed;
-            pnlCart.BackColor = Color.OrangeRed;
-            pnlBurger.BackColor = Color.Orange;
+            pnlWrap.BackColor = Color.White;
+            pnlSideDishes.BackColor = Color.White;
+            pnlDrinks.BackColor = Color.White;
+            pnlDesserts.BackColor = Color.White;
+            pnlCart.BackColor = Color.White;
+            pnlBurger.BackColor = Color.DarkGray;
+            lbxCart.Visible = false;
 
-            List<Nahrung> burger = new List<Nahrung>();
+            sheet = "Burger";
             CSVPharser pharser = new CSVPharser();
             string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Burger.csv";
             string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
             #endregion
             burger = pharser.CSVToList(path);
-            Nahrung[] burgerArray = burger.ToArray();
+            burgerArray = burger.ToArray();
             int length = burgerArray.GetLength(0);
             #region SettingLogic
             if (length >= 1)
@@ -123,21 +140,22 @@ namespace Bestellanwendung
             pbxBottomMidVeg.BackgroundImage = null;
             pbxBottomRightVeg.BackgroundImage = null;
 
-            pnlBurger.BackColor = Color.OrangeRed;
-            pnlWrap.BackColor = Color.OrangeRed;
-            pnlSideDishes.BackColor = Color.OrangeRed;
-            pnlDrinks.BackColor = Color.OrangeRed;
-            pnlDesserts.BackColor = Color.OrangeRed;
-            pnlCart.BackColor = Color.OrangeRed;
-            pnlWrap.BackColor = Color.Orange;
+            pnlBurger.BackColor = Color.White;
+            pnlWrap.BackColor = Color.White;
+            pnlSideDishes.BackColor = Color.White;
+            pnlDrinks.BackColor = Color.White;
+            pnlDesserts.BackColor = Color.White;
+            pnlCart.BackColor = Color.White;
+            pnlWrap.BackColor = Color.DarkGray;
+            lbxCart.Visible = false;
 
-            List<Nahrung> wrap = new List<Nahrung>();
+            sheet = "Wrap";
             CSVPharser pharser = new CSVPharser();
             string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Wrap.csv";
             string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
             #endregion
             wrap = pharser.CSVToList(path);
-            Nahrung[] wrapArray = wrap.ToArray();
+            wrapArray = wrap.ToArray();
             int length = wrapArray.GetLength(0);
             #region SettingLogic
             if (length >= 1)
@@ -213,20 +231,21 @@ namespace Bestellanwendung
             pbxBottomMidVeg.BackgroundImage = null;
             pbxBottomRightVeg.BackgroundImage = null;
 
-            pnlBurger.BackColor = Color.OrangeRed;
-            pnlWrap.BackColor = Color.OrangeRed;
-            pnlDrinks.BackColor = Color.OrangeRed;
-            pnlDesserts.BackColor = Color.OrangeRed;
-            pnlCart.BackColor = Color.OrangeRed;
-            pnlSideDishes.BackColor = Color.Orange;
+            pnlBurger.BackColor = Color.White;
+            pnlWrap.BackColor = Color.White;
+            pnlDrinks.BackColor = Color.White;
+            pnlDesserts.BackColor = Color.White;
+            pnlCart.BackColor = Color.White;
+            pnlSideDishes.BackColor = Color.DarkGray;
+            lbxCart.Visible = false;
 
-            List<Nahrung> sidedishes = new List<Nahrung>();
+            sheet = "Sidedishes";
             CSVPharser pharser = new CSVPharser();
             string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\SideDishes.csv";
             string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
             #endregion
             sidedishes = pharser.CSVToList(path);
-            Nahrung[] sidedishesArray = sidedishes.ToArray();
+            sidedishesArray = sidedishes.ToArray();
             int length = sidedishesArray.GetLength(0);
             #region SettingLogic
             if (length >= 1)
@@ -302,20 +321,21 @@ namespace Bestellanwendung
             pbxBottomMidVeg.BackgroundImage = null;
             pbxBottomRightVeg.BackgroundImage = null;
 
-            pnlBurger.BackColor = Color.OrangeRed;
-            pnlWrap.BackColor = Color.OrangeRed;
-            pnlSideDishes.BackColor = Color.OrangeRed;
-            pnlDesserts.BackColor = Color.OrangeRed;
-            pnlCart.BackColor = Color.OrangeRed;
-            pnlDrinks.BackColor = Color.Orange;
+            pnlBurger.BackColor = Color.White;
+            pnlWrap.BackColor = Color.White;
+            pnlSideDishes.BackColor = Color.White;
+            pnlDesserts.BackColor = Color.White;
+            pnlCart.BackColor = Color.White;
+            pnlDrinks.BackColor = Color.DarkGray;
+            lbxCart.Visible = false;
 
-            List<Nahrung> drinks = new List<Nahrung>();
+            sheet = "Drinks";
             CSVPharser pharser = new CSVPharser();
             string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Drinks.csv";
             string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
             #endregion
             drinks = pharser.CSVToList(path);
-            Nahrung[] drinksArray = drinks.ToArray();
+            drinksArray = drinks.ToArray();
             int length = drinksArray.GetLength(0);
             #region SettingLogic
             if (length >= 1)
@@ -385,20 +405,21 @@ namespace Bestellanwendung
             pbxBottomMidVeg.BackgroundImage = null;
             pbxBottomRightVeg.BackgroundImage = null;
 
-            pnlBurger.BackColor = Color.OrangeRed;
-            pnlWrap.BackColor = Color.OrangeRed;
-            pnlSideDishes.BackColor = Color.OrangeRed;
-            pnlDrinks.BackColor = Color.OrangeRed;
-            pnlCart.BackColor = Color.OrangeRed;
-            pnlDesserts.BackColor = Color.Orange;
+            pnlBurger.BackColor = Color.White;
+            pnlWrap.BackColor = Color.White;
+            pnlSideDishes.BackColor = Color.White;
+            pnlDrinks.BackColor = Color.White;
+            pnlCart.BackColor = Color.White;
+            pnlDesserts.BackColor = Color.DarkGray;
+            lbxCart.Visible = false;
 
-            List<Nahrung> desserts = new List<Nahrung>();
+            sheet = "Desserts";
             CSVPharser pharser = new CSVPharser();
             string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Desserts.csv";
             string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
             #endregion
             desserts = pharser.CSVToList(path);
-            Nahrung[] dessertsArray = desserts.ToArray();
+            dessertsArray = desserts.ToArray();
             int length = dessertsArray.GetLength(0);
             #region SettingLogic
             if (length >= 1)
@@ -467,42 +488,83 @@ namespace Bestellanwendung
             pnlBottomMid.Visible = false;
             pnlBottomRight.Visible = false;
 
-            pnlBurger.BackColor = Color.OrangeRed;
-            pnlWrap.BackColor = Color.OrangeRed;
-            pnlSideDishes.BackColor = Color.OrangeRed;
-            pnlDrinks.BackColor = Color.OrangeRed;
-            pnlDesserts.BackColor = Color.OrangeRed;
-            pnlCart.BackColor = Color.Orange;
+            pnlBurger.BackColor = Color.White;
+            pnlWrap.BackColor = Color.White;
+            pnlSideDishes.BackColor = Color.White;
+            pnlDrinks.BackColor = Color.White;
+            pnlDesserts.BackColor = Color.White;
+            pnlCart.BackColor = Color.DarkGray;
+
+            sheet = "Cart";
+            lbxCart.Visible = true;
         }
 
         private void cmdTopLeft_Click(object sender, EventArgs e)
         {
-
+            if (sheet == "Burger") { Cart.Add(burgerArray[0]); lbxCart.Items.Add(burgerArray[0].Name + " " + burgerArray[0].Price + " €"); }
+            if (sheet == "Wrap") { Cart.Add(wrapArray[0]); lbxCart.Items.Add(wrapArray[0].Name + " " + wrapArray[0].Price + " €"); }
+            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[0]); lbxCart.Items.Add(sidedishesArray[0].Name + " " + sidedishesArray[0].Price + " €"); }
+            if (sheet == "Drinks") { Cart.Add(drinksArray[0]); lbxCart.Items.Add(drinksArray[0].Name + " " + drinksArray[0].Price + " €"); }
+            if (sheet == "Desserts") { Cart.Add(dessertsArray[0]); lbxCart.Items.Add(dessertsArray[0].Name + " " + dessertsArray[0].Price + " €"); }
+            lbxCart.Refresh();
         }
 
         private void cmdTopMid_Click(object sender, EventArgs e)
         {
-
+            if (sheet == "Burger") { Cart.Add(burgerArray[1]); lbxCart.Items.Add(burgerArray[1].Name + " " + burgerArray[1].Price + " €"); }
+            if (sheet == "Wrap") { Cart.Add(wrapArray[1]); lbxCart.Items.Add(wrapArray[1].Name + " " + wrapArray[1].Price + " €"); }
+            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[1]); lbxCart.Items.Add(sidedishesArray[1].Name + " " + sidedishesArray[1].Price + " €"); }
+            if (sheet == "Drinks") { Cart.Add(drinksArray[1]); lbxCart.Items.Add(drinksArray[1].Name + " " + drinksArray[1].Price + " €"); }
+            if (sheet == "Desserts") { Cart.Add(dessertsArray[1]); lbxCart.Items.Add(dessertsArray[1].Name + " " + dessertsArray[1].Price + " €"); }
         }
 
         private void cmdTopRight_Click(object sender, EventArgs e)
         {
-
+            if (sheet == "Burger") { Cart.Add(burgerArray[2]); lbxCart.Items.Add(burgerArray[2].Name + " " + burgerArray[2].Price + " €"); }
+            if (sheet == "Wrap") { Cart.Add(wrapArray[2]); lbxCart.Items.Add(wrapArray[2].Name + " " + wrapArray[2].Price + " €"); }
+            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[2]); lbxCart.Items.Add(sidedishesArray[2].Name + " " + sidedishesArray[2].Price + " €"); }
+            if (sheet == "Drinks") { Cart.Add(drinksArray[2]); lbxCart.Items.Add(drinksArray[2].Name + " " + drinksArray[2].Price + " €"); }
+            if (sheet == "Desserts") { Cart.Add(dessertsArray[2]); lbxCart.Items.Add(dessertsArray[2].Name + " " + dessertsArray[2].Price + " €"); }
         }
 
         private void cmdBottomLeft_Click(object sender, EventArgs e)
         {
-
+            if (sheet == "Burger") { Cart.Add(burgerArray[3]); lbxCart.Items.Add(burgerArray[3].Name + " " + burgerArray[3].Price + " €"); }
+            if (sheet == "Wrap") { Cart.Add(wrapArray[3]); lbxCart.Items.Add(wrapArray[3].Name + " " + wrapArray[3].Price + " €"); }
+            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[3]); lbxCart.Items.Add(sidedishesArray[3].Name + " " + sidedishesArray[3].Price + " €"); }
+            if (sheet == "Drinks") { Cart.Add(drinksArray[3]); lbxCart.Items.Add(drinksArray[3].Name + " " + drinksArray[3].Price + " €"); }
+            if (sheet == "Desserts") { Cart.Add(dessertsArray[3]); lbxCart.Items.Add(dessertsArray[3].Name + " " + dessertsArray[3].Price + " €"); }
         }
 
         private void cmdBottomMid_Click(object sender, EventArgs e)
         {
-
+            if (sheet == "Burger") { Cart.Add(burgerArray[4]); lbxCart.Items.Add(burgerArray[4].Name + " " + burgerArray[4].Price + " €"); }
+            if (sheet == "Wrap") { Cart.Add(wrapArray[4]); lbxCart.Items.Add(wrapArray[4].Name + " " + wrapArray[4].Price + " €"); }
+            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[4]); lbxCart.Items.Add(sidedishesArray[4].Name + " " + sidedishesArray[4].Price + " €"); }
+            if (sheet == "Drinks") { Cart.Add(drinksArray[4]); lbxCart.Items.Add(drinksArray[4].Name + " " + drinksArray[4].Price + " €"); }
+            if (sheet == "Desserts") { Cart.Add(dessertsArray[4]); lbxCart.Items.Add(dessertsArray[4].Name + " " + dessertsArray[4].Price + " €"); }
         }
 
         private void cmdBottomRight_Click(object sender, EventArgs e)
         {
+            if (sheet == "Burger") { Cart.Add(burgerArray[5]); lbxCart.Items.Add(burgerArray[5].Name + " " + burgerArray[5].Price + " €"); }
+            if (sheet == "Wrap") { Cart.Add(wrapArray[5]); lbxCart.Items.Add(wrapArray[5].Name + " " + wrapArray[5].Price + " €"); }
+            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[5]); lbxCart.Items.Add(sidedishesArray[5].Name + " " + sidedishesArray[5].Price + " €"); }
+            if (sheet == "Drinks") { Cart.Add(drinksArray[5]); lbxCart.Items.Add(drinksArray[5].Name + " " + drinksArray[5].Price + " €"); }
+            if (sheet == "Desserts") { Cart.Add(dessertsArray[5]); lbxCart.Items.Add(dessertsArray[5].Name + " " + dessertsArray[5].Price + " €"); }
+        }
 
+        private void cmdAdd_Click(object sender, EventArgs e)
+        {
+            Cart.Add(lbxMethods.GetObjFromLbx(lbxCart.SelectedItem.ToString()
+                , ref burger, ref wrap, ref sidedishes, ref drinks, ref desserts));
+            lbxMethods.WriteToListBox(Cart, lbxCart);
+        }
+
+        private void cmdRemove_Click(object sender, EventArgs e)
+        {
+            Cart.Remove((Nahrung)lbxCart.SelectedItem);
+            lbxMethods.WriteToListBox(Cart, lbxCart);
         }
     }
 }

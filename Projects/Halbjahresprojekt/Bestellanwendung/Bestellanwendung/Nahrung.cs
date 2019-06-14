@@ -5,6 +5,13 @@ namespace Bestellanwendung
     public class Nahrung
     {
         #region Properties
+        private int anzahl = 0;
+        
+        public int Anzahl
+        {
+            get { return anzahl; }
+            set { Anzahl = value; }
+        }
         private string name;
 
         public string Name
@@ -50,5 +57,11 @@ namespace Bestellanwendung
             this.Veg = vgi;
             this.Allergy = algy;
         }
+
+        public override string ToString()
+        {
+            return $"{name}: {anzahl} x {price * anzahl}";
+        }
     }
 }
+           

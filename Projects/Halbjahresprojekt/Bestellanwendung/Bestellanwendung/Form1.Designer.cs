@@ -49,6 +49,9 @@
             this.cmdSideDishes = new System.Windows.Forms.Button();
             this.cmdWraps = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.cmdRemove = new System.Windows.Forms.Button();
+            this.cmdAdd = new System.Windows.Forms.Button();
+            this.lbxCart = new System.Windows.Forms.ListBox();
             this.pnlBottomRight = new System.Windows.Forms.Panel();
             this.pbxBottomRightVeg = new System.Windows.Forms.PictureBox();
             this.lblBottomRightAllergy = new System.Windows.Forms.Label();
@@ -89,7 +92,7 @@
             this.lblTopLeftName = new System.Windows.Forms.Label();
             this.cmdTopLeft = new System.Windows.Forms.Button();
             this.pnlTopSide = new System.Windows.Forms.Panel();
-            this.lblOrderingApp = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pnlLeftSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBurger)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxWrap)).BeginInit();
@@ -120,7 +123,7 @@
             this.cmdBurger.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.cmdBurger.FlatAppearance.BorderSize = 0;
             this.cmdBurger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdBurger.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdBurger.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdBurger.ForeColor = System.Drawing.Color.Transparent;
             this.cmdBurger.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdBurger.Location = new System.Drawing.Point(0, 113);
@@ -134,7 +137,7 @@
             // 
             // pnlLeftSide
             // 
-            this.pnlLeftSide.BackColor = System.Drawing.Color.Firebrick;
+            this.pnlLeftSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.pnlLeftSide.Controls.Add(this.pbxBurger);
             this.pnlLeftSide.Controls.Add(this.pbxWrap);
             this.pnlLeftSide.Controls.Add(this.pbxSideDishes);
@@ -227,50 +230,50 @@
             // 
             // pnlCart
             // 
-            this.pnlCart.BackColor = System.Drawing.Color.OrangeRed;
+            this.pnlCart.BackColor = System.Drawing.Color.White;
             this.pnlCart.Location = new System.Drawing.Point(0, 317);
             this.pnlCart.Name = "pnlCart";
-            this.pnlCart.Size = new System.Drawing.Size(12, 37);
+            this.pnlCart.Size = new System.Drawing.Size(7, 37);
             this.pnlCart.TabIndex = 4;
             // 
             // pnlDesserts
             // 
-            this.pnlDesserts.BackColor = System.Drawing.Color.OrangeRed;
+            this.pnlDesserts.BackColor = System.Drawing.Color.White;
             this.pnlDesserts.Location = new System.Drawing.Point(0, 276);
             this.pnlDesserts.Name = "pnlDesserts";
-            this.pnlDesserts.Size = new System.Drawing.Size(12, 37);
+            this.pnlDesserts.Size = new System.Drawing.Size(7, 37);
             this.pnlDesserts.TabIndex = 4;
             // 
             // pnlDrinks
             // 
-            this.pnlDrinks.BackColor = System.Drawing.Color.OrangeRed;
+            this.pnlDrinks.BackColor = System.Drawing.Color.White;
             this.pnlDrinks.Location = new System.Drawing.Point(0, 235);
             this.pnlDrinks.Name = "pnlDrinks";
-            this.pnlDrinks.Size = new System.Drawing.Size(12, 37);
+            this.pnlDrinks.Size = new System.Drawing.Size(7, 37);
             this.pnlDrinks.TabIndex = 4;
             // 
             // pnlSideDishes
             // 
-            this.pnlSideDishes.BackColor = System.Drawing.Color.OrangeRed;
+            this.pnlSideDishes.BackColor = System.Drawing.Color.White;
             this.pnlSideDishes.Location = new System.Drawing.Point(0, 195);
             this.pnlSideDishes.Name = "pnlSideDishes";
-            this.pnlSideDishes.Size = new System.Drawing.Size(12, 37);
+            this.pnlSideDishes.Size = new System.Drawing.Size(7, 37);
             this.pnlSideDishes.TabIndex = 4;
             // 
             // pnlWrap
             // 
-            this.pnlWrap.BackColor = System.Drawing.Color.OrangeRed;
+            this.pnlWrap.BackColor = System.Drawing.Color.White;
             this.pnlWrap.Location = new System.Drawing.Point(0, 154);
             this.pnlWrap.Name = "pnlWrap";
-            this.pnlWrap.Size = new System.Drawing.Size(12, 37);
+            this.pnlWrap.Size = new System.Drawing.Size(7, 37);
             this.pnlWrap.TabIndex = 4;
             // 
             // pnlBurger
             // 
-            this.pnlBurger.BackColor = System.Drawing.Color.OrangeRed;
+            this.pnlBurger.BackColor = System.Drawing.Color.White;
             this.pnlBurger.Location = new System.Drawing.Point(0, 113);
             this.pnlBurger.Name = "pnlBurger";
-            this.pnlBurger.Size = new System.Drawing.Size(12, 37);
+            this.pnlBurger.Size = new System.Drawing.Size(7, 37);
             this.pnlBurger.TabIndex = 3;
             // 
             // cmdDesserts
@@ -278,7 +281,7 @@
             this.cmdDesserts.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.cmdDesserts.FlatAppearance.BorderSize = 0;
             this.cmdDesserts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdDesserts.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdDesserts.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdDesserts.ForeColor = System.Drawing.Color.Transparent;
             this.cmdDesserts.Location = new System.Drawing.Point(0, 276);
             this.cmdDesserts.Name = "cmdDesserts";
@@ -293,7 +296,7 @@
             this.cmdDrinks.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.cmdDrinks.FlatAppearance.BorderSize = 0;
             this.cmdDrinks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdDrinks.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdDrinks.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdDrinks.ForeColor = System.Drawing.Color.Transparent;
             this.cmdDrinks.Location = new System.Drawing.Point(0, 235);
             this.cmdDrinks.Name = "cmdDrinks";
@@ -308,7 +311,7 @@
             this.cmdCart.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.cmdCart.FlatAppearance.BorderSize = 0;
             this.cmdCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdCart.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCart.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCart.ForeColor = System.Drawing.Color.Transparent;
             this.cmdCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdCart.Location = new System.Drawing.Point(0, 317);
@@ -324,7 +327,7 @@
             this.cmdSideDishes.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.cmdSideDishes.FlatAppearance.BorderSize = 0;
             this.cmdSideDishes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdSideDishes.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdSideDishes.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdSideDishes.ForeColor = System.Drawing.Color.Transparent;
             this.cmdSideDishes.Location = new System.Drawing.Point(0, 195);
             this.cmdSideDishes.Name = "cmdSideDishes";
@@ -339,7 +342,7 @@
             this.cmdWraps.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.cmdWraps.FlatAppearance.BorderSize = 0;
             this.cmdWraps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdWraps.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdWraps.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdWraps.ForeColor = System.Drawing.Color.Transparent;
             this.cmdWraps.Location = new System.Drawing.Point(0, 154);
             this.cmdWraps.Name = "cmdWraps";
@@ -351,7 +354,10 @@
             // 
             // pnlMain
             // 
-            this.pnlMain.BackColor = System.Drawing.Color.Gold;
+            this.pnlMain.BackColor = System.Drawing.Color.White;
+            this.pnlMain.Controls.Add(this.cmdRemove);
+            this.pnlMain.Controls.Add(this.cmdAdd);
+            this.pnlMain.Controls.Add(this.lbxCart);
             this.pnlMain.Controls.Add(this.pnlBottomRight);
             this.pnlMain.Controls.Add(this.pnlBottomMid);
             this.pnlMain.Controls.Add(this.pnlBottomLeft);
@@ -364,15 +370,47 @@
             this.pnlMain.Size = new System.Drawing.Size(746, 538);
             this.pnlMain.TabIndex = 3;
             // 
+            // cmdRemove
+            // 
+            this.cmdRemove.Location = new System.Drawing.Point(232, 35);
+            this.cmdRemove.Name = "cmdRemove";
+            this.cmdRemove.Size = new System.Drawing.Size(75, 23);
+            this.cmdRemove.TabIndex = 0;
+            this.cmdRemove.Text = "Remove";
+            this.cmdRemove.UseVisualStyleBackColor = true;
+            this.cmdRemove.Click += new System.EventHandler(this.cmdRemove_Click);
+            // 
+            // cmdAdd
+            // 
+            this.cmdAdd.Location = new System.Drawing.Point(232, 6);
+            this.cmdAdd.Name = "cmdAdd";
+            this.cmdAdd.Size = new System.Drawing.Size(75, 23);
+            this.cmdAdd.TabIndex = 1;
+            this.cmdAdd.Text = "Add";
+            this.cmdAdd.UseVisualStyleBackColor = true;
+            this.cmdAdd.Click += new System.EventHandler(this.cmdAdd_Click);
+            // 
+            // lbxCart
+            // 
+            this.lbxCart.BackColor = System.Drawing.Color.DarkGray;
+            this.lbxCart.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxCart.FormattingEnabled = true;
+            this.lbxCart.ItemHeight = 18;
+            this.lbxCart.Location = new System.Drawing.Point(10, 6);
+            this.lbxCart.Name = "lbxCart";
+            this.lbxCart.Size = new System.Drawing.Size(216, 202);
+            this.lbxCart.TabIndex = 8;
+            // 
             // pnlBottomRight
             // 
-            this.pnlBottomRight.BackColor = System.Drawing.Color.Yellow;
+            this.pnlBottomRight.BackColor = System.Drawing.Color.White;
+            this.pnlBottomRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlBottomRight.Controls.Add(this.pbxBottomRightVeg);
             this.pnlBottomRight.Controls.Add(this.lblBottomRightAllergy);
             this.pnlBottomRight.Controls.Add(this.lblBottomRightPrice);
             this.pnlBottomRight.Controls.Add(this.lblBottomRightName);
             this.pnlBottomRight.Controls.Add(this.cmdBottomRight);
-            this.pnlBottomRight.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlBottomRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlBottomRight.Location = new System.Drawing.Point(521, 286);
             this.pnlBottomRight.Name = "pnlBottomRight";
             this.pnlBottomRight.Padding = new System.Windows.Forms.Padding(5);
@@ -393,7 +431,7 @@
             this.lblBottomRightAllergy.AutoSize = true;
             this.lblBottomRightAllergy.Location = new System.Drawing.Point(98, 170);
             this.lblBottomRightAllergy.Name = "lblBottomRightAllergy";
-            this.lblBottomRightAllergy.Size = new System.Drawing.Size(14, 17);
+            this.lblBottomRightAllergy.Size = new System.Drawing.Size(11, 16);
             this.lblBottomRightAllergy.TabIndex = 7;
             this.lblBottomRightAllergy.Text = " ";
             // 
@@ -402,23 +440,23 @@
             this.lblBottomRightPrice.AutoSize = true;
             this.lblBottomRightPrice.Location = new System.Drawing.Point(29, 170);
             this.lblBottomRightPrice.Name = "lblBottomRightPrice";
-            this.lblBottomRightPrice.Size = new System.Drawing.Size(14, 17);
+            this.lblBottomRightPrice.Size = new System.Drawing.Size(11, 16);
             this.lblBottomRightPrice.TabIndex = 6;
             this.lblBottomRightPrice.Text = " ";
             // 
             // lblBottomRightName
             // 
             this.lblBottomRightName.AutoSize = true;
-            this.lblBottomRightName.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBottomRightName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBottomRightName.Location = new System.Drawing.Point(29, 10);
             this.lblBottomRightName.Name = "lblBottomRightName";
-            this.lblBottomRightName.Size = new System.Drawing.Size(18, 21);
+            this.lblBottomRightName.Size = new System.Drawing.Size(13, 20);
             this.lblBottomRightName.TabIndex = 1;
             this.lblBottomRightName.Text = " ";
             // 
             // cmdBottomRight
             // 
-            this.cmdBottomRight.BackColor = System.Drawing.Color.Crimson;
+            this.cmdBottomRight.BackColor = System.Drawing.Color.DarkGray;
             this.cmdBottomRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmdBottomRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdBottomRight.Location = new System.Drawing.Point(32, 36);
@@ -430,13 +468,14 @@
             // 
             // pnlBottomMid
             // 
-            this.pnlBottomMid.BackColor = System.Drawing.Color.Yellow;
+            this.pnlBottomMid.BackColor = System.Drawing.Color.White;
+            this.pnlBottomMid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlBottomMid.Controls.Add(this.pbxBottomMidVeg);
             this.pnlBottomMid.Controls.Add(this.lblBottomMidAllergy);
             this.pnlBottomMid.Controls.Add(this.lblBottomMidPrice);
             this.pnlBottomMid.Controls.Add(this.lblBottomMidName);
             this.pnlBottomMid.Controls.Add(this.cmdBottomMid);
-            this.pnlBottomMid.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlBottomMid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlBottomMid.Location = new System.Drawing.Point(282, 286);
             this.pnlBottomMid.Name = "pnlBottomMid";
             this.pnlBottomMid.Padding = new System.Windows.Forms.Padding(5);
@@ -457,7 +496,7 @@
             this.lblBottomMidAllergy.AutoSize = true;
             this.lblBottomMidAllergy.Location = new System.Drawing.Point(98, 170);
             this.lblBottomMidAllergy.Name = "lblBottomMidAllergy";
-            this.lblBottomMidAllergy.Size = new System.Drawing.Size(14, 17);
+            this.lblBottomMidAllergy.Size = new System.Drawing.Size(11, 16);
             this.lblBottomMidAllergy.TabIndex = 7;
             this.lblBottomMidAllergy.Text = " ";
             // 
@@ -466,23 +505,23 @@
             this.lblBottomMidPrice.AutoSize = true;
             this.lblBottomMidPrice.Location = new System.Drawing.Point(29, 170);
             this.lblBottomMidPrice.Name = "lblBottomMidPrice";
-            this.lblBottomMidPrice.Size = new System.Drawing.Size(14, 17);
+            this.lblBottomMidPrice.Size = new System.Drawing.Size(11, 16);
             this.lblBottomMidPrice.TabIndex = 6;
             this.lblBottomMidPrice.Text = " ";
             // 
             // lblBottomMidName
             // 
             this.lblBottomMidName.AutoSize = true;
-            this.lblBottomMidName.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBottomMidName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBottomMidName.Location = new System.Drawing.Point(29, 10);
             this.lblBottomMidName.Name = "lblBottomMidName";
-            this.lblBottomMidName.Size = new System.Drawing.Size(18, 21);
+            this.lblBottomMidName.Size = new System.Drawing.Size(13, 20);
             this.lblBottomMidName.TabIndex = 1;
             this.lblBottomMidName.Text = " ";
             // 
             // cmdBottomMid
             // 
-            this.cmdBottomMid.BackColor = System.Drawing.Color.Crimson;
+            this.cmdBottomMid.BackColor = System.Drawing.Color.DarkGray;
             this.cmdBottomMid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmdBottomMid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdBottomMid.Location = new System.Drawing.Point(32, 36);
@@ -494,13 +533,14 @@
             // 
             // pnlBottomLeft
             // 
-            this.pnlBottomLeft.BackColor = System.Drawing.Color.Yellow;
+            this.pnlBottomLeft.BackColor = System.Drawing.Color.White;
+            this.pnlBottomLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlBottomLeft.Controls.Add(this.pbxBottomLeftVeg);
             this.pnlBottomLeft.Controls.Add(this.lblBottomLeftAllergy);
             this.pnlBottomLeft.Controls.Add(this.lblBottomLeftPrice);
             this.pnlBottomLeft.Controls.Add(this.lblBottomLeftName);
             this.pnlBottomLeft.Controls.Add(this.cmdBottomLeft);
-            this.pnlBottomLeft.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlBottomLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlBottomLeft.Location = new System.Drawing.Point(42, 288);
             this.pnlBottomLeft.Name = "pnlBottomLeft";
             this.pnlBottomLeft.Padding = new System.Windows.Forms.Padding(5);
@@ -521,7 +561,7 @@
             this.lblBottomLeftAllergy.AutoSize = true;
             this.lblBottomLeftAllergy.Location = new System.Drawing.Point(98, 168);
             this.lblBottomLeftAllergy.Name = "lblBottomLeftAllergy";
-            this.lblBottomLeftAllergy.Size = new System.Drawing.Size(14, 17);
+            this.lblBottomLeftAllergy.Size = new System.Drawing.Size(11, 16);
             this.lblBottomLeftAllergy.TabIndex = 7;
             this.lblBottomLeftAllergy.Text = " ";
             // 
@@ -530,23 +570,23 @@
             this.lblBottomLeftPrice.AutoSize = true;
             this.lblBottomLeftPrice.Location = new System.Drawing.Point(29, 168);
             this.lblBottomLeftPrice.Name = "lblBottomLeftPrice";
-            this.lblBottomLeftPrice.Size = new System.Drawing.Size(14, 17);
+            this.lblBottomLeftPrice.Size = new System.Drawing.Size(11, 16);
             this.lblBottomLeftPrice.TabIndex = 6;
             this.lblBottomLeftPrice.Text = " ";
             // 
             // lblBottomLeftName
             // 
             this.lblBottomLeftName.AutoSize = true;
-            this.lblBottomLeftName.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBottomLeftName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBottomLeftName.Location = new System.Drawing.Point(29, 10);
             this.lblBottomLeftName.Name = "lblBottomLeftName";
-            this.lblBottomLeftName.Size = new System.Drawing.Size(18, 21);
+            this.lblBottomLeftName.Size = new System.Drawing.Size(13, 20);
             this.lblBottomLeftName.TabIndex = 1;
             this.lblBottomLeftName.Text = " ";
             // 
             // cmdBottomLeft
             // 
-            this.cmdBottomLeft.BackColor = System.Drawing.Color.Crimson;
+            this.cmdBottomLeft.BackColor = System.Drawing.Color.DarkGray;
             this.cmdBottomLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmdBottomLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdBottomLeft.Location = new System.Drawing.Point(32, 36);
@@ -558,13 +598,14 @@
             // 
             // pnlTopRight
             // 
-            this.pnlTopRight.BackColor = System.Drawing.Color.Yellow;
+            this.pnlTopRight.BackColor = System.Drawing.SystemColors.Window;
+            this.pnlTopRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlTopRight.Controls.Add(this.pbxTopRightVeg);
             this.pnlTopRight.Controls.Add(this.lblTopRightAllergy);
             this.pnlTopRight.Controls.Add(this.lblTopRightPrice);
             this.pnlTopRight.Controls.Add(this.lblTopRightName);
             this.pnlTopRight.Controls.Add(this.cmdTopRight);
-            this.pnlTopRight.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlTopRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlTopRight.Location = new System.Drawing.Point(521, 52);
             this.pnlTopRight.Name = "pnlTopRight";
             this.pnlTopRight.Padding = new System.Windows.Forms.Padding(5);
@@ -585,7 +626,7 @@
             this.lblTopRightAllergy.AutoSize = true;
             this.lblTopRightAllergy.Location = new System.Drawing.Point(98, 169);
             this.lblTopRightAllergy.Name = "lblTopRightAllergy";
-            this.lblTopRightAllergy.Size = new System.Drawing.Size(14, 17);
+            this.lblTopRightAllergy.Size = new System.Drawing.Size(11, 16);
             this.lblTopRightAllergy.TabIndex = 5;
             this.lblTopRightAllergy.Text = " ";
             // 
@@ -594,23 +635,23 @@
             this.lblTopRightPrice.AutoSize = true;
             this.lblTopRightPrice.Location = new System.Drawing.Point(29, 169);
             this.lblTopRightPrice.Name = "lblTopRightPrice";
-            this.lblTopRightPrice.Size = new System.Drawing.Size(14, 17);
+            this.lblTopRightPrice.Size = new System.Drawing.Size(11, 16);
             this.lblTopRightPrice.TabIndex = 4;
             this.lblTopRightPrice.Text = " ";
             // 
             // lblTopRightName
             // 
             this.lblTopRightName.AutoSize = true;
-            this.lblTopRightName.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTopRightName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTopRightName.Location = new System.Drawing.Point(29, 10);
             this.lblTopRightName.Name = "lblTopRightName";
-            this.lblTopRightName.Size = new System.Drawing.Size(18, 21);
+            this.lblTopRightName.Size = new System.Drawing.Size(13, 20);
             this.lblTopRightName.TabIndex = 1;
             this.lblTopRightName.Text = " ";
             // 
             // cmdTopRight
             // 
-            this.cmdTopRight.BackColor = System.Drawing.Color.Crimson;
+            this.cmdTopRight.BackColor = System.Drawing.Color.DarkGray;
             this.cmdTopRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmdTopRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdTopRight.Location = new System.Drawing.Point(32, 36);
@@ -622,14 +663,15 @@
             // 
             // pnlTopMid
             // 
-            this.pnlTopMid.BackColor = System.Drawing.Color.Yellow;
+            this.pnlTopMid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pnlTopMid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlTopMid.Controls.Add(this.pbxTopMidVeg);
             this.pnlTopMid.Controls.Add(this.lblTopMidAllergy);
             this.pnlTopMid.Controls.Add(this.lblTopMidPrice);
             this.pnlTopMid.Controls.Add(this.panel8);
             this.pnlTopMid.Controls.Add(this.lblTopMidName);
             this.pnlTopMid.Controls.Add(this.cmdTopMid);
-            this.pnlTopMid.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlTopMid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlTopMid.Location = new System.Drawing.Point(282, 52);
             this.pnlTopMid.Name = "pnlTopMid";
             this.pnlTopMid.Padding = new System.Windows.Forms.Padding(5);
@@ -650,7 +692,7 @@
             this.lblTopMidAllergy.AutoSize = true;
             this.lblTopMidAllergy.Location = new System.Drawing.Point(98, 169);
             this.lblTopMidAllergy.Name = "lblTopMidAllergy";
-            this.lblTopMidAllergy.Size = new System.Drawing.Size(14, 17);
+            this.lblTopMidAllergy.Size = new System.Drawing.Size(11, 16);
             this.lblTopMidAllergy.TabIndex = 5;
             this.lblTopMidAllergy.Text = " ";
             // 
@@ -659,7 +701,7 @@
             this.lblTopMidPrice.AutoSize = true;
             this.lblTopMidPrice.Location = new System.Drawing.Point(29, 169);
             this.lblTopMidPrice.Name = "lblTopMidPrice";
-            this.lblTopMidPrice.Size = new System.Drawing.Size(14, 17);
+            this.lblTopMidPrice.Size = new System.Drawing.Size(11, 16);
             this.lblTopMidPrice.TabIndex = 4;
             this.lblTopMidPrice.Text = " ";
             // 
@@ -678,7 +720,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(61, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 17);
+            this.label2.Size = new System.Drawing.Size(76, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Hamburger";
             // 
@@ -695,16 +737,16 @@
             // lblTopMidName
             // 
             this.lblTopMidName.AutoSize = true;
-            this.lblTopMidName.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTopMidName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTopMidName.Location = new System.Drawing.Point(29, 10);
             this.lblTopMidName.Name = "lblTopMidName";
-            this.lblTopMidName.Size = new System.Drawing.Size(18, 21);
+            this.lblTopMidName.Size = new System.Drawing.Size(13, 20);
             this.lblTopMidName.TabIndex = 1;
             this.lblTopMidName.Text = " ";
             // 
             // cmdTopMid
             // 
-            this.cmdTopMid.BackColor = System.Drawing.Color.Crimson;
+            this.cmdTopMid.BackColor = System.Drawing.Color.DarkGray;
             this.cmdTopMid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmdTopMid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdTopMid.Location = new System.Drawing.Point(32, 36);
@@ -716,13 +758,14 @@
             // 
             // pnlTopLeft
             // 
-            this.pnlTopLeft.BackColor = System.Drawing.Color.Yellow;
+            this.pnlTopLeft.BackColor = System.Drawing.Color.White;
+            this.pnlTopLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlTopLeft.Controls.Add(this.pbxTopLeftVeg);
             this.pnlTopLeft.Controls.Add(this.lblTopLeftAllergy);
             this.pnlTopLeft.Controls.Add(this.lblTopLeftPrice);
             this.pnlTopLeft.Controls.Add(this.lblTopLeftName);
             this.pnlTopLeft.Controls.Add(this.cmdTopLeft);
-            this.pnlTopLeft.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlTopLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlTopLeft.Location = new System.Drawing.Point(42, 52);
             this.pnlTopLeft.Name = "pnlTopLeft";
             this.pnlTopLeft.Padding = new System.Windows.Forms.Padding(5);
@@ -731,6 +774,7 @@
             // 
             // pbxTopLeftVeg
             // 
+            this.pbxTopLeftVeg.BackColor = System.Drawing.Color.Transparent;
             this.pbxTopLeftVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxTopLeftVeg.Location = new System.Drawing.Point(144, 0);
             this.pbxTopLeftVeg.Name = "pbxTopLeftVeg";
@@ -743,7 +787,7 @@
             this.lblTopLeftAllergy.AutoSize = true;
             this.lblTopLeftAllergy.Location = new System.Drawing.Point(102, 169);
             this.lblTopLeftAllergy.Name = "lblTopLeftAllergy";
-            this.lblTopLeftAllergy.Size = new System.Drawing.Size(14, 17);
+            this.lblTopLeftAllergy.Size = new System.Drawing.Size(11, 16);
             this.lblTopLeftAllergy.TabIndex = 3;
             this.lblTopLeftAllergy.Text = " ";
             // 
@@ -752,23 +796,23 @@
             this.lblTopLeftPrice.AutoSize = true;
             this.lblTopLeftPrice.Location = new System.Drawing.Point(29, 169);
             this.lblTopLeftPrice.Name = "lblTopLeftPrice";
-            this.lblTopLeftPrice.Size = new System.Drawing.Size(14, 17);
+            this.lblTopLeftPrice.Size = new System.Drawing.Size(11, 16);
             this.lblTopLeftPrice.TabIndex = 2;
             this.lblTopLeftPrice.Text = " ";
             // 
             // lblTopLeftName
             // 
             this.lblTopLeftName.AutoSize = true;
-            this.lblTopLeftName.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTopLeftName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTopLeftName.Location = new System.Drawing.Point(29, 10);
             this.lblTopLeftName.Name = "lblTopLeftName";
-            this.lblTopLeftName.Size = new System.Drawing.Size(18, 21);
+            this.lblTopLeftName.Size = new System.Drawing.Size(13, 20);
             this.lblTopLeftName.TabIndex = 1;
             this.lblTopLeftName.Text = " ";
             // 
             // cmdTopLeft
             // 
-            this.cmdTopLeft.BackColor = System.Drawing.Color.Crimson;
+            this.cmdTopLeft.BackColor = System.Drawing.Color.DarkGray;
             this.cmdTopLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmdTopLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdTopLeft.Location = new System.Drawing.Point(32, 36);
@@ -780,24 +824,21 @@
             // 
             // pnlTopSide
             // 
-            this.pnlTopSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pnlTopSide.Controls.Add(this.lblOrderingApp);
+            this.pnlTopSide.BackColor = System.Drawing.Color.DimGray;
+            this.pnlTopSide.Controls.Add(this.textBox1);
             this.pnlTopSide.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopSide.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnlTopSide.Location = new System.Drawing.Point(196, 0);
             this.pnlTopSide.Name = "pnlTopSide";
             this.pnlTopSide.Size = new System.Drawing.Size(746, 54);
             this.pnlTopSide.TabIndex = 2;
             // 
-            // lblOrderingApp
+            // textBox1
             // 
-            this.lblOrderingApp.AutoSize = true;
-            this.lblOrderingApp.Font = new System.Drawing.Font("MV Boli", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrderingApp.ForeColor = System.Drawing.Color.Brown;
-            this.lblOrderingApp.Location = new System.Drawing.Point(6, 2);
-            this.lblOrderingApp.Name = "lblOrderingApp";
-            this.lblOrderingApp.Size = new System.Drawing.Size(352, 46);
-            this.lblOrderingApp.TabIndex = 0;
-            this.lblOrderingApp.Text = "Ordering Application";
+            this.textBox1.Location = new System.Drawing.Point(42, 22);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
             // 
             // frmMain
             // 
@@ -905,7 +946,10 @@
         private System.Windows.Forms.PictureBox pbxTopRightVeg;
         private System.Windows.Forms.PictureBox pbxTopMidVeg;
         private System.Windows.Forms.PictureBox pbxTopLeftVeg;
-        private System.Windows.Forms.Label lblOrderingApp;
+        private System.Windows.Forms.ListBox lbxCart;
+        private System.Windows.Forms.Button cmdRemove;
+        private System.Windows.Forms.Button cmdAdd;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
