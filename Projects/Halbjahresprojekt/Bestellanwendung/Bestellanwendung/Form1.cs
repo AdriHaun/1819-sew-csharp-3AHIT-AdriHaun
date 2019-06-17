@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,6 +37,23 @@ namespace Bestellanwendung
             pnlBottomMid.Visible = false;
             pnlBottomRight.Visible = false;
             lbxCart.Visible = false;
+            cmdAdd.Visible = false;
+            cmdRemove.Visible = false;
+
+            CSVPharser pharser = new CSVPharser();
+            string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Burger.csv";
+            string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
+
+            burger = pharser.CSVToList(path);
+            burgerArray = burger.ToArray();
+
+            if (burgerArray[5].Veg == true) pbxTopRightVeg.BackgroundImage = new Bitmap(veg);
+            lblTopRightName.Text = burgerArray[5].Name;
+            lblTopRightPrice.Text = Convert.ToString(burgerArray[5].Price) + " €";
+            lblTopRightAllergy.Text = burgerArray[5].Allergy;
+            cmdTopRight.BackgroundImage = new Bitmap(burgerArray[5].Path);
+            pnlTopRight.Visible = true;
+            sheet = "Burger";
         }
 
         
@@ -57,6 +75,9 @@ namespace Bestellanwendung
             pnlCart.BackColor = Color.White;
             pnlBurger.BackColor = Color.DarkGray;
             lbxCart.Visible = false;
+            cmdAdd.Visible = false;
+            cmdRemove.Visible = false;
+            lblRec.Visible = false;
 
             sheet = "Burger";
             CSVPharser pharser = new CSVPharser();
@@ -148,6 +169,9 @@ namespace Bestellanwendung
             pnlCart.BackColor = Color.White;
             pnlWrap.BackColor = Color.DarkGray;
             lbxCart.Visible = false;
+            cmdAdd.Visible = false;
+            cmdRemove.Visible = false;
+            lblRec.Visible = false;
 
             sheet = "Wrap";
             CSVPharser pharser = new CSVPharser();
@@ -238,6 +262,9 @@ namespace Bestellanwendung
             pnlCart.BackColor = Color.White;
             pnlSideDishes.BackColor = Color.DarkGray;
             lbxCart.Visible = false;
+            cmdAdd.Visible = false;
+            cmdRemove.Visible = false;
+            lblRec.Visible = false;
 
             sheet = "Sidedishes";
             CSVPharser pharser = new CSVPharser();
@@ -328,6 +355,9 @@ namespace Bestellanwendung
             pnlCart.BackColor = Color.White;
             pnlDrinks.BackColor = Color.DarkGray;
             lbxCart.Visible = false;
+            cmdAdd.Visible = false;
+            cmdRemove.Visible = false;
+            lblRec.Visible = false;
 
             sheet = "Drinks";
             CSVPharser pharser = new CSVPharser();
@@ -412,6 +442,9 @@ namespace Bestellanwendung
             pnlCart.BackColor = Color.White;
             pnlDesserts.BackColor = Color.DarkGray;
             lbxCart.Visible = false;
+            cmdAdd.Visible = false;
+            cmdRemove.Visible = false;
+            lblRec.Visible = false;
 
             sheet = "Desserts";
             CSVPharser pharser = new CSVPharser();
@@ -494,76 +527,143 @@ namespace Bestellanwendung
             pnlDrinks.BackColor = Color.White;
             pnlDesserts.BackColor = Color.White;
             pnlCart.BackColor = Color.DarkGray;
+            lbxCart.Visible = true;
+            cmdAdd.Visible = true;
+            cmdRemove.Visible = true;
+            lblRec.Visible = false;
 
             sheet = "Cart";
-            lbxCart.Visible = true;
         }
 
         private void cmdTopLeft_Click(object sender, EventArgs e)
         {
-            if (sheet == "Burger") { Cart.Add(burgerArray[0]); lbxCart.Items.Add(burgerArray[0].Name + " " + burgerArray[0].Price + " €"); }
-            if (sheet == "Wrap") { Cart.Add(wrapArray[0]); lbxCart.Items.Add(wrapArray[0].Name + " " + wrapArray[0].Price + " €"); }
-            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[0]); lbxCart.Items.Add(sidedishesArray[0].Name + " " + sidedishesArray[0].Price + " €"); }
-            if (sheet == "Drinks") { Cart.Add(drinksArray[0]); lbxCart.Items.Add(drinksArray[0].Name + " " + drinksArray[0].Price + " €"); }
-            if (sheet == "Desserts") { Cart.Add(dessertsArray[0]); lbxCart.Items.Add(dessertsArray[0].Name + " " + dessertsArray[0].Price + " €"); }
-            lbxCart.Refresh();
+            int index = 0;
+
+            if (sheet == "Burger")
+                try { Cart.Find(nahrung => nahrung.Name == burgerArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(burgerArray[index]); }
+            if (sheet == "Wrap") 
+                try { Cart.Find(nahrung => nahrung.Name == wrapArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(wrapArray[index]); }
+            if (sheet == "Sidedishes")
+                try { Cart.Find(nahrung => nahrung.Name == sidedishesArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(sidedishesArray[index]); }
+            if (sheet == "Drinks")
+                try { Cart.Find(nahrung => nahrung.Name == drinksArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(drinksArray[index]); }
+            if (sheet == "Desserts")
+                try { Cart.Find(nahrung => nahrung.Name == dessertsArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(dessertsArray[index]); }
+
+            lbxMethods.WriteToListBox(Cart, lbxCart);
         }
 
         private void cmdTopMid_Click(object sender, EventArgs e)
         {
-            if (sheet == "Burger") { Cart.Add(burgerArray[1]); lbxCart.Items.Add(burgerArray[1].Name + " " + burgerArray[1].Price + " €"); }
-            if (sheet == "Wrap") { Cart.Add(wrapArray[1]); lbxCart.Items.Add(wrapArray[1].Name + " " + wrapArray[1].Price + " €"); }
-            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[1]); lbxCart.Items.Add(sidedishesArray[1].Name + " " + sidedishesArray[1].Price + " €"); }
-            if (sheet == "Drinks") { Cart.Add(drinksArray[1]); lbxCart.Items.Add(drinksArray[1].Name + " " + drinksArray[1].Price + " €"); }
-            if (sheet == "Desserts") { Cart.Add(dessertsArray[1]); lbxCart.Items.Add(dessertsArray[1].Name + " " + dessertsArray[1].Price + " €"); }
+            int index = 1;
+
+            if (sheet == "Burger")
+                try { Cart.Find(nahrung => nahrung.Name == burgerArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(burgerArray[index]); }
+            if (sheet == "Wrap")
+                try { Cart.Find(nahrung => nahrung.Name == wrapArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(wrapArray[index]); }
+            if (sheet == "Sidedishes")
+                try { Cart.Find(nahrung => nahrung.Name == sidedishesArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(sidedishesArray[index]); }
+            if (sheet == "Drinks")
+                try { Cart.Find(nahrung => nahrung.Name == drinksArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(drinksArray[index]); }
+            if (sheet == "Desserts")
+                try { Cart.Find(nahrung => nahrung.Name == dessertsArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(dessertsArray[index]); }
+
+            lbxMethods.WriteToListBox(Cart, lbxCart);
         }
 
         private void cmdTopRight_Click(object sender, EventArgs e)
         {
-            if (sheet == "Burger") { Cart.Add(burgerArray[2]); lbxCart.Items.Add(burgerArray[2].Name + " " + burgerArray[2].Price + " €"); }
-            if (sheet == "Wrap") { Cart.Add(wrapArray[2]); lbxCart.Items.Add(wrapArray[2].Name + " " + wrapArray[2].Price + " €"); }
-            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[2]); lbxCart.Items.Add(sidedishesArray[2].Name + " " + sidedishesArray[2].Price + " €"); }
-            if (sheet == "Drinks") { Cart.Add(drinksArray[2]); lbxCart.Items.Add(drinksArray[2].Name + " " + drinksArray[2].Price + " €"); }
-            if (sheet == "Desserts") { Cart.Add(dessertsArray[2]); lbxCart.Items.Add(dessertsArray[2].Name + " " + dessertsArray[2].Price + " €"); }
+            int index = 2;
+
+            if (sheet == "Burger")
+                try { Cart.Find(nahrung => nahrung.Name == burgerArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(burgerArray[index]); }
+            if (sheet == "Wrap")
+                try { Cart.Find(nahrung => nahrung.Name == wrapArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(wrapArray[index]); }
+            if (sheet == "Sidedishes")
+                try { Cart.Find(nahrung => nahrung.Name == sidedishesArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(sidedishesArray[index]); }
+            if (sheet == "Drinks")
+                try { Cart.Find(nahrung => nahrung.Name == drinksArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(drinksArray[index]); }
+            if (sheet == "Desserts")
+                try { Cart.Find(nahrung => nahrung.Name == dessertsArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(dessertsArray[index]); }
+
+            lbxMethods.WriteToListBox(Cart, lbxCart);
         }
 
         private void cmdBottomLeft_Click(object sender, EventArgs e)
         {
-            if (sheet == "Burger") { Cart.Add(burgerArray[3]); lbxCart.Items.Add(burgerArray[3].Name + " " + burgerArray[3].Price + " €"); }
-            if (sheet == "Wrap") { Cart.Add(wrapArray[3]); lbxCart.Items.Add(wrapArray[3].Name + " " + wrapArray[3].Price + " €"); }
-            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[3]); lbxCart.Items.Add(sidedishesArray[3].Name + " " + sidedishesArray[3].Price + " €"); }
-            if (sheet == "Drinks") { Cart.Add(drinksArray[3]); lbxCart.Items.Add(drinksArray[3].Name + " " + drinksArray[3].Price + " €"); }
-            if (sheet == "Desserts") { Cart.Add(dessertsArray[3]); lbxCart.Items.Add(dessertsArray[3].Name + " " + dessertsArray[3].Price + " €"); }
+            int index = 3;
+
+            if (sheet == "Burger")
+                try { Cart.Find(nahrung => nahrung.Name == burgerArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(burgerArray[index]); }
+            if (sheet == "Wrap")
+                try { Cart.Find(nahrung => nahrung.Name == wrapArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(wrapArray[index]); }
+            if (sheet == "Sidedishes")
+                try { Cart.Find(nahrung => nahrung.Name == sidedishesArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(sidedishesArray[index]); }
+            if (sheet == "Drinks")
+                try { Cart.Find(nahrung => nahrung.Name == drinksArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(drinksArray[index]); }
+            if (sheet == "Desserts")
+                try { Cart.Find(nahrung => nahrung.Name == dessertsArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(dessertsArray[index]); }
+
+            lbxMethods.WriteToListBox(Cart, lbxCart);
         }
 
         private void cmdBottomMid_Click(object sender, EventArgs e)
         {
-            if (sheet == "Burger") { Cart.Add(burgerArray[4]); lbxCart.Items.Add(burgerArray[4].Name + " " + burgerArray[4].Price + " €"); }
-            if (sheet == "Wrap") { Cart.Add(wrapArray[4]); lbxCart.Items.Add(wrapArray[4].Name + " " + wrapArray[4].Price + " €"); }
-            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[4]); lbxCart.Items.Add(sidedishesArray[4].Name + " " + sidedishesArray[4].Price + " €"); }
-            if (sheet == "Drinks") { Cart.Add(drinksArray[4]); lbxCart.Items.Add(drinksArray[4].Name + " " + drinksArray[4].Price + " €"); }
-            if (sheet == "Desserts") { Cart.Add(dessertsArray[4]); lbxCart.Items.Add(dessertsArray[4].Name + " " + dessertsArray[4].Price + " €"); }
+            int index = 4;
+
+            if (sheet == "Burger")
+                try { Cart.Find(nahrung => nahrung.Name == burgerArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(burgerArray[index]); }
+            if (sheet == "Wrap")
+                try { Cart.Find(nahrung => nahrung.Name == wrapArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(wrapArray[index]); }
+            if (sheet == "Sidedishes")
+                try { Cart.Find(nahrung => nahrung.Name == sidedishesArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(sidedishesArray[index]); }
+            if (sheet == "Drinks")
+                try { Cart.Find(nahrung => nahrung.Name == drinksArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(drinksArray[index]); }
+            if (sheet == "Desserts")
+                try { Cart.Find(nahrung => nahrung.Name == dessertsArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(dessertsArray[index]); }
+
+            lbxMethods.WriteToListBox(Cart, lbxCart);
         }
 
         private void cmdBottomRight_Click(object sender, EventArgs e)
         {
-            if (sheet == "Burger") { Cart.Add(burgerArray[5]); lbxCart.Items.Add(burgerArray[5].Name + " " + burgerArray[5].Price + " €"); }
-            if (sheet == "Wrap") { Cart.Add(wrapArray[5]); lbxCart.Items.Add(wrapArray[5].Name + " " + wrapArray[5].Price + " €"); }
-            if (sheet == "Sidedishes") { Cart.Add(sidedishesArray[5]); lbxCart.Items.Add(sidedishesArray[5].Name + " " + sidedishesArray[5].Price + " €"); }
-            if (sheet == "Drinks") { Cart.Add(drinksArray[5]); lbxCart.Items.Add(drinksArray[5].Name + " " + drinksArray[5].Price + " €"); }
-            if (sheet == "Desserts") { Cart.Add(dessertsArray[5]); lbxCart.Items.Add(dessertsArray[5].Name + " " + dessertsArray[5].Price + " €"); }
+            int index = 5;
+
+            if (sheet == "Burger")
+                try { Cart.Find(nahrung => nahrung.Name == burgerArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(burgerArray[index]); }
+            if (sheet == "Wrap")
+                try { Cart.Find(nahrung => nahrung.Name == wrapArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(wrapArray[index]); }
+            if (sheet == "Sidedishes")
+                try { Cart.Find(nahrung => nahrung.Name == sidedishesArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(sidedishesArray[index]); }
+            if (sheet == "Drinks")
+                try { Cart.Find(nahrung => nahrung.Name == drinksArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(drinksArray[index]); }
+            if (sheet == "Desserts")
+                try { Cart.Find(nahrung => nahrung.Name == dessertsArray[index].Name).Anzahl++; } catch (Exception) { Cart.Add(dessertsArray[index]); }
+
+            lbxMethods.WriteToListBox(Cart, lbxCart);
         }
 
         private void cmdAdd_Click(object sender, EventArgs e)
         {
-            Cart.Add(lbxMethods.GetObjFromLbx(lbxCart.SelectedItem.ToString()
-                , ref burger, ref wrap, ref sidedishes, ref drinks, ref desserts));
-            lbxMethods.WriteToListBox(Cart, lbxCart);
+            if (lbxCart.SelectedItem != null)
+            {
+                var nahrungs = new List<Nahrung>();
+
+                foreach (var nahrung in burgerArray) if (nahrung != null) nahrungs.Add(nahrung);
+                foreach (var nahrung in wrapArray) if (nahrung != null) nahrungs.Add(nahrung);
+                foreach (var nahrung in sidedishesArray) if (nahrung != null) nahrungs.Add(nahrung);
+                foreach (var nahrung in drinksArray) if (nahrung != null) nahrungs.Add(nahrung);
+                foreach (var nahrung in dessertsArray) if (nahrung != null) nahrungs.Add(nahrung);
+                
+                Cart.Find(nahrung => nahrung.ToString() == lbxCart.SelectedItem.ToString()).Anzahl++;
+                lbxMethods.WriteToListBox(Cart, lbxCart);
+
+            }
         }
 
         private void cmdRemove_Click(object sender, EventArgs e)
         {
-            Cart.Remove((Nahrung)lbxCart.SelectedItem);
+            Cart.Find(nahrung => nahrung.ToString() == lbxCart.SelectedItem.ToString()).Anzahl--;
             lbxMethods.WriteToListBox(Cart, lbxCart);
         }
     }

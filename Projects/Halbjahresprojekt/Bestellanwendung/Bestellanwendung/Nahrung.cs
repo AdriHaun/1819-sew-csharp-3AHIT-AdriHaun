@@ -5,12 +5,12 @@ namespace Bestellanwendung
     public class Nahrung
     {
         #region Properties
-        private int anzahl = 0;
+        private int anzahl = 1;
         
         public int Anzahl
         {
             get { return anzahl; }
-            set { Anzahl = value; }
+            set { anzahl = value; }
         }
         private string name;
 
@@ -49,6 +49,7 @@ namespace Bestellanwendung
             set { allergy = value; }
         }
         #endregion
+
         public Nahrung(string nme, string pth, double prc, bool vgi, string algy)
         {
             this.Name = nme;
@@ -60,7 +61,7 @@ namespace Bestellanwendung
 
         public override string ToString()
         {
-            return $"{name}: {anzahl} x {price * anzahl}";
+            return $"{name}: {anzahl} x {price.ToString("C")} = {(price * anzahl).ToString("C")}";
         }
     }
 }
