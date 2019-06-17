@@ -11,7 +11,7 @@ namespace Bestellanwendung
             lbx.Items.Clear();
             foreach (var o in list)
             {
-                lbx.Items.Add(o.ToString());
+                lbx.Items.Add(o);
             }
         }
 
