@@ -52,44 +52,44 @@
             this.pnlTopSide = new System.Windows.Forms.Panel();
             this.lblBestellanwendung = new System.Windows.Forms.Label();
             this.pnlTopLeft = new System.Windows.Forms.Panel();
-            this.cmdTopLeft = new System.Windows.Forms.Button();
-            this.lblTopLeftName = new System.Windows.Forms.Label();
-            this.lblTopLeftPrice = new System.Windows.Forms.Label();
-            this.lblTopLeftAllergy = new System.Windows.Forms.Label();
             this.pbxTopLeftVeg = new System.Windows.Forms.PictureBox();
+            this.lblTopLeftAllergy = new System.Windows.Forms.Label();
+            this.lblTopLeftPrice = new System.Windows.Forms.Label();
+            this.lblTopLeftName = new System.Windows.Forms.Label();
+            this.cmdTopLeft = new System.Windows.Forms.Button();
             this.pnlTopMid = new System.Windows.Forms.Panel();
-            this.cmdTopMid = new System.Windows.Forms.Button();
-            this.lblTopMidName = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblTopMidPrice = new System.Windows.Forms.Label();
-            this.lblTopMidAllergy = new System.Windows.Forms.Label();
             this.pbxTopMidVeg = new System.Windows.Forms.PictureBox();
+            this.lblTopMidAllergy = new System.Windows.Forms.Label();
+            this.lblTopMidPrice = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lblTopMidName = new System.Windows.Forms.Label();
+            this.cmdTopMid = new System.Windows.Forms.Button();
             this.pnlTopRight = new System.Windows.Forms.Panel();
-            this.cmdTopRight = new System.Windows.Forms.Button();
-            this.lblTopRightName = new System.Windows.Forms.Label();
-            this.lblTopRightPrice = new System.Windows.Forms.Label();
-            this.lblTopRightAllergy = new System.Windows.Forms.Label();
             this.pbxTopRightVeg = new System.Windows.Forms.PictureBox();
+            this.lblTopRightAllergy = new System.Windows.Forms.Label();
+            this.lblTopRightPrice = new System.Windows.Forms.Label();
+            this.lblTopRightName = new System.Windows.Forms.Label();
+            this.cmdTopRight = new System.Windows.Forms.Button();
             this.pnlBottomLeft = new System.Windows.Forms.Panel();
-            this.cmdBottomLeft = new System.Windows.Forms.Button();
-            this.lblBottomLeftName = new System.Windows.Forms.Label();
-            this.lblBottomLeftPrice = new System.Windows.Forms.Label();
-            this.lblBottomLeftAllergy = new System.Windows.Forms.Label();
             this.pbxBottomLeftVeg = new System.Windows.Forms.PictureBox();
+            this.lblBottomLeftAllergy = new System.Windows.Forms.Label();
+            this.lblBottomLeftPrice = new System.Windows.Forms.Label();
+            this.lblBottomLeftName = new System.Windows.Forms.Label();
+            this.cmdBottomLeft = new System.Windows.Forms.Button();
             this.pnlBottomMid = new System.Windows.Forms.Panel();
-            this.cmdBottomMid = new System.Windows.Forms.Button();
-            this.lblBottomMidName = new System.Windows.Forms.Label();
-            this.lblBottomMidPrice = new System.Windows.Forms.Label();
-            this.lblBottomMidAllergy = new System.Windows.Forms.Label();
             this.pbxBottomMidVeg = new System.Windows.Forms.PictureBox();
+            this.lblBottomMidAllergy = new System.Windows.Forms.Label();
+            this.lblBottomMidPrice = new System.Windows.Forms.Label();
+            this.lblBottomMidName = new System.Windows.Forms.Label();
+            this.cmdBottomMid = new System.Windows.Forms.Button();
             this.pnlBottomRight = new System.Windows.Forms.Panel();
-            this.cmdBottomRight = new System.Windows.Forms.Button();
-            this.lblBottomRightName = new System.Windows.Forms.Label();
-            this.lblBottomRightPrice = new System.Windows.Forms.Label();
-            this.lblBottomRightAllergy = new System.Windows.Forms.Label();
             this.pbxBottomRightVeg = new System.Windows.Forms.PictureBox();
+            this.lblBottomRightAllergy = new System.Windows.Forms.Label();
+            this.lblBottomRightPrice = new System.Windows.Forms.Label();
+            this.lblBottomRightName = new System.Windows.Forms.Label();
+            this.cmdBottomRight = new System.Windows.Forms.Button();
             this.lbxCart = new System.Windows.Forms.ListBox();
             this.cmdAdd = new System.Windows.Forms.Button();
             this.cmdRemove = new System.Windows.Forms.Button();
@@ -108,8 +108,8 @@
             this.pnlTopLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTopLeftVeg)).BeginInit();
             this.pnlTopMid.SuspendLayout();
-            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTopMidVeg)).BeginInit();
+            this.panel8.SuspendLayout();
             this.pnlTopRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTopRightVeg)).BeginInit();
             this.pnlBottomLeft.SuspendLayout();
@@ -405,17 +405,33 @@
             this.pnlTopLeft.Size = new System.Drawing.Size(180, 202);
             this.pnlTopLeft.TabIndex = 0;
             // 
-            // cmdTopLeft
+            // pbxTopLeftVeg
             // 
-            this.cmdTopLeft.BackColor = System.Drawing.Color.DarkGray;
-            this.cmdTopLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmdTopLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdTopLeft.Location = new System.Drawing.Point(32, 36);
-            this.cmdTopLeft.Name = "cmdTopLeft";
-            this.cmdTopLeft.Size = new System.Drawing.Size(114, 123);
-            this.cmdTopLeft.TabIndex = 0;
-            this.cmdTopLeft.UseVisualStyleBackColor = false;
-            this.cmdTopLeft.Click += new System.EventHandler(this.cmdTopLeft_Click);
+            this.pbxTopLeftVeg.BackColor = System.Drawing.Color.Transparent;
+            this.pbxTopLeftVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxTopLeftVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxTopLeftVeg.Name = "pbxTopLeftVeg";
+            this.pbxTopLeftVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxTopLeftVeg.TabIndex = 6;
+            this.pbxTopLeftVeg.TabStop = false;
+            // 
+            // lblTopLeftAllergy
+            // 
+            this.lblTopLeftAllergy.AutoSize = true;
+            this.lblTopLeftAllergy.Location = new System.Drawing.Point(102, 169);
+            this.lblTopLeftAllergy.Name = "lblTopLeftAllergy";
+            this.lblTopLeftAllergy.Size = new System.Drawing.Size(11, 16);
+            this.lblTopLeftAllergy.TabIndex = 3;
+            this.lblTopLeftAllergy.Text = " ";
+            // 
+            // lblTopLeftPrice
+            // 
+            this.lblTopLeftPrice.AutoSize = true;
+            this.lblTopLeftPrice.Location = new System.Drawing.Point(29, 169);
+            this.lblTopLeftPrice.Name = "lblTopLeftPrice";
+            this.lblTopLeftPrice.Size = new System.Drawing.Size(11, 16);
+            this.lblTopLeftPrice.TabIndex = 2;
+            this.lblTopLeftPrice.Text = " ";
             // 
             // lblTopLeftName
             // 
@@ -427,33 +443,17 @@
             this.lblTopLeftName.TabIndex = 1;
             this.lblTopLeftName.Text = " ";
             // 
-            // lblTopLeftPrice
+            // cmdTopLeft
             // 
-            this.lblTopLeftPrice.AutoSize = true;
-            this.lblTopLeftPrice.Location = new System.Drawing.Point(29, 169);
-            this.lblTopLeftPrice.Name = "lblTopLeftPrice";
-            this.lblTopLeftPrice.Size = new System.Drawing.Size(11, 16);
-            this.lblTopLeftPrice.TabIndex = 2;
-            this.lblTopLeftPrice.Text = " ";
-            // 
-            // lblTopLeftAllergy
-            // 
-            this.lblTopLeftAllergy.AutoSize = true;
-            this.lblTopLeftAllergy.Location = new System.Drawing.Point(102, 169);
-            this.lblTopLeftAllergy.Name = "lblTopLeftAllergy";
-            this.lblTopLeftAllergy.Size = new System.Drawing.Size(11, 16);
-            this.lblTopLeftAllergy.TabIndex = 3;
-            this.lblTopLeftAllergy.Text = " ";
-            // 
-            // pbxTopLeftVeg
-            // 
-            this.pbxTopLeftVeg.BackColor = System.Drawing.Color.Transparent;
-            this.pbxTopLeftVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxTopLeftVeg.Location = new System.Drawing.Point(144, 0);
-            this.pbxTopLeftVeg.Name = "pbxTopLeftVeg";
-            this.pbxTopLeftVeg.Size = new System.Drawing.Size(36, 36);
-            this.pbxTopLeftVeg.TabIndex = 6;
-            this.pbxTopLeftVeg.TabStop = false;
+            this.cmdTopLeft.BackColor = System.Drawing.Color.DarkGray;
+            this.cmdTopLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdTopLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdTopLeft.Location = new System.Drawing.Point(32, 36);
+            this.cmdTopLeft.Name = "cmdTopLeft";
+            this.cmdTopLeft.Size = new System.Drawing.Size(114, 123);
+            this.cmdTopLeft.TabIndex = 0;
+            this.cmdTopLeft.UseVisualStyleBackColor = false;
+            this.cmdTopLeft.Click += new System.EventHandler(this.cmdTopLeft_Click);
             // 
             // pnlTopMid
             // 
@@ -472,27 +472,32 @@
             this.pnlTopMid.Size = new System.Drawing.Size(180, 202);
             this.pnlTopMid.TabIndex = 1;
             // 
-            // cmdTopMid
+            // pbxTopMidVeg
             // 
-            this.cmdTopMid.BackColor = System.Drawing.Color.DarkGray;
-            this.cmdTopMid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmdTopMid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdTopMid.Location = new System.Drawing.Point(32, 36);
-            this.cmdTopMid.Name = "cmdTopMid";
-            this.cmdTopMid.Size = new System.Drawing.Size(114, 123);
-            this.cmdTopMid.TabIndex = 0;
-            this.cmdTopMid.UseVisualStyleBackColor = false;
-            this.cmdTopMid.Click += new System.EventHandler(this.cmdTopMid_Click);
+            this.pbxTopMidVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxTopMidVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxTopMidVeg.Name = "pbxTopMidVeg";
+            this.pbxTopMidVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxTopMidVeg.TabIndex = 7;
+            this.pbxTopMidVeg.TabStop = false;
             // 
-            // lblTopMidName
+            // lblTopMidAllergy
             // 
-            this.lblTopMidName.AutoSize = true;
-            this.lblTopMidName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTopMidName.Location = new System.Drawing.Point(29, 10);
-            this.lblTopMidName.Name = "lblTopMidName";
-            this.lblTopMidName.Size = new System.Drawing.Size(13, 20);
-            this.lblTopMidName.TabIndex = 1;
-            this.lblTopMidName.Text = " ";
+            this.lblTopMidAllergy.AutoSize = true;
+            this.lblTopMidAllergy.Location = new System.Drawing.Point(98, 169);
+            this.lblTopMidAllergy.Name = "lblTopMidAllergy";
+            this.lblTopMidAllergy.Size = new System.Drawing.Size(11, 16);
+            this.lblTopMidAllergy.TabIndex = 5;
+            this.lblTopMidAllergy.Text = " ";
+            // 
+            // lblTopMidPrice
+            // 
+            this.lblTopMidPrice.AutoSize = true;
+            this.lblTopMidPrice.Location = new System.Drawing.Point(29, 169);
+            this.lblTopMidPrice.Name = "lblTopMidPrice";
+            this.lblTopMidPrice.Size = new System.Drawing.Size(11, 16);
+            this.lblTopMidPrice.TabIndex = 4;
+            this.lblTopMidPrice.Text = " ";
             // 
             // panel8
             // 
@@ -504,6 +509,15 @@
             this.panel8.Size = new System.Drawing.Size(180, 175);
             this.panel8.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(61, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Hamburger";
+            // 
             // button2
             // 
             this.button2.BackgroundImage = global::Bestellanwendung.Properties.Resources.Cart_512;
@@ -514,41 +528,27 @@
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // lblTopMidName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Hamburger";
+            this.lblTopMidName.AutoSize = true;
+            this.lblTopMidName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTopMidName.Location = new System.Drawing.Point(29, 10);
+            this.lblTopMidName.Name = "lblTopMidName";
+            this.lblTopMidName.Size = new System.Drawing.Size(13, 20);
+            this.lblTopMidName.TabIndex = 1;
+            this.lblTopMidName.Text = " ";
             // 
-            // lblTopMidPrice
+            // cmdTopMid
             // 
-            this.lblTopMidPrice.AutoSize = true;
-            this.lblTopMidPrice.Location = new System.Drawing.Point(29, 169);
-            this.lblTopMidPrice.Name = "lblTopMidPrice";
-            this.lblTopMidPrice.Size = new System.Drawing.Size(11, 16);
-            this.lblTopMidPrice.TabIndex = 4;
-            this.lblTopMidPrice.Text = " ";
-            // 
-            // lblTopMidAllergy
-            // 
-            this.lblTopMidAllergy.AutoSize = true;
-            this.lblTopMidAllergy.Location = new System.Drawing.Point(98, 169);
-            this.lblTopMidAllergy.Name = "lblTopMidAllergy";
-            this.lblTopMidAllergy.Size = new System.Drawing.Size(11, 16);
-            this.lblTopMidAllergy.TabIndex = 5;
-            this.lblTopMidAllergy.Text = " ";
-            // 
-            // pbxTopMidVeg
-            // 
-            this.pbxTopMidVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxTopMidVeg.Location = new System.Drawing.Point(144, 0);
-            this.pbxTopMidVeg.Name = "pbxTopMidVeg";
-            this.pbxTopMidVeg.Size = new System.Drawing.Size(36, 36);
-            this.pbxTopMidVeg.TabIndex = 7;
-            this.pbxTopMidVeg.TabStop = false;
+            this.cmdTopMid.BackColor = System.Drawing.Color.DarkGray;
+            this.cmdTopMid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdTopMid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdTopMid.Location = new System.Drawing.Point(32, 36);
+            this.cmdTopMid.Name = "cmdTopMid";
+            this.cmdTopMid.Size = new System.Drawing.Size(114, 123);
+            this.cmdTopMid.TabIndex = 0;
+            this.cmdTopMid.UseVisualStyleBackColor = false;
+            this.cmdTopMid.Click += new System.EventHandler(this.cmdTopMid_Click);
             // 
             // pnlTopRight
             // 
@@ -566,17 +566,32 @@
             this.pnlTopRight.Size = new System.Drawing.Size(180, 202);
             this.pnlTopRight.TabIndex = 2;
             // 
-            // cmdTopRight
+            // pbxTopRightVeg
             // 
-            this.cmdTopRight.BackColor = System.Drawing.Color.DarkGray;
-            this.cmdTopRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmdTopRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdTopRight.Location = new System.Drawing.Point(32, 36);
-            this.cmdTopRight.Name = "cmdTopRight";
-            this.cmdTopRight.Size = new System.Drawing.Size(114, 123);
-            this.cmdTopRight.TabIndex = 0;
-            this.cmdTopRight.UseVisualStyleBackColor = false;
-            this.cmdTopRight.Click += new System.EventHandler(this.cmdTopRight_Click);
+            this.pbxTopRightVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxTopRightVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxTopRightVeg.Name = "pbxTopRightVeg";
+            this.pbxTopRightVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxTopRightVeg.TabIndex = 7;
+            this.pbxTopRightVeg.TabStop = false;
+            // 
+            // lblTopRightAllergy
+            // 
+            this.lblTopRightAllergy.AutoSize = true;
+            this.lblTopRightAllergy.Location = new System.Drawing.Point(98, 169);
+            this.lblTopRightAllergy.Name = "lblTopRightAllergy";
+            this.lblTopRightAllergy.Size = new System.Drawing.Size(11, 16);
+            this.lblTopRightAllergy.TabIndex = 5;
+            this.lblTopRightAllergy.Text = " ";
+            // 
+            // lblTopRightPrice
+            // 
+            this.lblTopRightPrice.AutoSize = true;
+            this.lblTopRightPrice.Location = new System.Drawing.Point(29, 169);
+            this.lblTopRightPrice.Name = "lblTopRightPrice";
+            this.lblTopRightPrice.Size = new System.Drawing.Size(11, 16);
+            this.lblTopRightPrice.TabIndex = 4;
+            this.lblTopRightPrice.Text = " ";
             // 
             // lblTopRightName
             // 
@@ -588,32 +603,17 @@
             this.lblTopRightName.TabIndex = 1;
             this.lblTopRightName.Text = " ";
             // 
-            // lblTopRightPrice
+            // cmdTopRight
             // 
-            this.lblTopRightPrice.AutoSize = true;
-            this.lblTopRightPrice.Location = new System.Drawing.Point(29, 169);
-            this.lblTopRightPrice.Name = "lblTopRightPrice";
-            this.lblTopRightPrice.Size = new System.Drawing.Size(11, 16);
-            this.lblTopRightPrice.TabIndex = 4;
-            this.lblTopRightPrice.Text = " ";
-            // 
-            // lblTopRightAllergy
-            // 
-            this.lblTopRightAllergy.AutoSize = true;
-            this.lblTopRightAllergy.Location = new System.Drawing.Point(98, 169);
-            this.lblTopRightAllergy.Name = "lblTopRightAllergy";
-            this.lblTopRightAllergy.Size = new System.Drawing.Size(11, 16);
-            this.lblTopRightAllergy.TabIndex = 5;
-            this.lblTopRightAllergy.Text = " ";
-            // 
-            // pbxTopRightVeg
-            // 
-            this.pbxTopRightVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxTopRightVeg.Location = new System.Drawing.Point(144, 0);
-            this.pbxTopRightVeg.Name = "pbxTopRightVeg";
-            this.pbxTopRightVeg.Size = new System.Drawing.Size(36, 36);
-            this.pbxTopRightVeg.TabIndex = 7;
-            this.pbxTopRightVeg.TabStop = false;
+            this.cmdTopRight.BackColor = System.Drawing.Color.DarkGray;
+            this.cmdTopRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdTopRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdTopRight.Location = new System.Drawing.Point(32, 36);
+            this.cmdTopRight.Name = "cmdTopRight";
+            this.cmdTopRight.Size = new System.Drawing.Size(114, 123);
+            this.cmdTopRight.TabIndex = 0;
+            this.cmdTopRight.UseVisualStyleBackColor = false;
+            this.cmdTopRight.Click += new System.EventHandler(this.cmdTopRight_Click);
             // 
             // pnlBottomLeft
             // 
@@ -631,17 +631,32 @@
             this.pnlBottomLeft.Size = new System.Drawing.Size(180, 202);
             this.pnlBottomLeft.TabIndex = 3;
             // 
-            // cmdBottomLeft
+            // pbxBottomLeftVeg
             // 
-            this.cmdBottomLeft.BackColor = System.Drawing.Color.DarkGray;
-            this.cmdBottomLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmdBottomLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdBottomLeft.Location = new System.Drawing.Point(32, 36);
-            this.cmdBottomLeft.Name = "cmdBottomLeft";
-            this.cmdBottomLeft.Size = new System.Drawing.Size(114, 123);
-            this.cmdBottomLeft.TabIndex = 0;
-            this.cmdBottomLeft.UseVisualStyleBackColor = false;
-            this.cmdBottomLeft.Click += new System.EventHandler(this.cmdBottomLeft_Click);
+            this.pbxBottomLeftVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxBottomLeftVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxBottomLeftVeg.Name = "pbxBottomLeftVeg";
+            this.pbxBottomLeftVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxBottomLeftVeg.TabIndex = 7;
+            this.pbxBottomLeftVeg.TabStop = false;
+            // 
+            // lblBottomLeftAllergy
+            // 
+            this.lblBottomLeftAllergy.AutoSize = true;
+            this.lblBottomLeftAllergy.Location = new System.Drawing.Point(98, 168);
+            this.lblBottomLeftAllergy.Name = "lblBottomLeftAllergy";
+            this.lblBottomLeftAllergy.Size = new System.Drawing.Size(11, 16);
+            this.lblBottomLeftAllergy.TabIndex = 7;
+            this.lblBottomLeftAllergy.Text = " ";
+            // 
+            // lblBottomLeftPrice
+            // 
+            this.lblBottomLeftPrice.AutoSize = true;
+            this.lblBottomLeftPrice.Location = new System.Drawing.Point(29, 168);
+            this.lblBottomLeftPrice.Name = "lblBottomLeftPrice";
+            this.lblBottomLeftPrice.Size = new System.Drawing.Size(11, 16);
+            this.lblBottomLeftPrice.TabIndex = 6;
+            this.lblBottomLeftPrice.Text = " ";
             // 
             // lblBottomLeftName
             // 
@@ -653,32 +668,17 @@
             this.lblBottomLeftName.TabIndex = 1;
             this.lblBottomLeftName.Text = " ";
             // 
-            // lblBottomLeftPrice
+            // cmdBottomLeft
             // 
-            this.lblBottomLeftPrice.AutoSize = true;
-            this.lblBottomLeftPrice.Location = new System.Drawing.Point(29, 168);
-            this.lblBottomLeftPrice.Name = "lblBottomLeftPrice";
-            this.lblBottomLeftPrice.Size = new System.Drawing.Size(11, 16);
-            this.lblBottomLeftPrice.TabIndex = 6;
-            this.lblBottomLeftPrice.Text = " ";
-            // 
-            // lblBottomLeftAllergy
-            // 
-            this.lblBottomLeftAllergy.AutoSize = true;
-            this.lblBottomLeftAllergy.Location = new System.Drawing.Point(98, 168);
-            this.lblBottomLeftAllergy.Name = "lblBottomLeftAllergy";
-            this.lblBottomLeftAllergy.Size = new System.Drawing.Size(11, 16);
-            this.lblBottomLeftAllergy.TabIndex = 7;
-            this.lblBottomLeftAllergy.Text = " ";
-            // 
-            // pbxBottomLeftVeg
-            // 
-            this.pbxBottomLeftVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxBottomLeftVeg.Location = new System.Drawing.Point(144, 0);
-            this.pbxBottomLeftVeg.Name = "pbxBottomLeftVeg";
-            this.pbxBottomLeftVeg.Size = new System.Drawing.Size(36, 36);
-            this.pbxBottomLeftVeg.TabIndex = 7;
-            this.pbxBottomLeftVeg.TabStop = false;
+            this.cmdBottomLeft.BackColor = System.Drawing.Color.DarkGray;
+            this.cmdBottomLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdBottomLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdBottomLeft.Location = new System.Drawing.Point(32, 36);
+            this.cmdBottomLeft.Name = "cmdBottomLeft";
+            this.cmdBottomLeft.Size = new System.Drawing.Size(114, 123);
+            this.cmdBottomLeft.TabIndex = 0;
+            this.cmdBottomLeft.UseVisualStyleBackColor = false;
+            this.cmdBottomLeft.Click += new System.EventHandler(this.cmdBottomLeft_Click);
             // 
             // pnlBottomMid
             // 
@@ -696,17 +696,32 @@
             this.pnlBottomMid.Size = new System.Drawing.Size(180, 204);
             this.pnlBottomMid.TabIndex = 4;
             // 
-            // cmdBottomMid
+            // pbxBottomMidVeg
             // 
-            this.cmdBottomMid.BackColor = System.Drawing.Color.DarkGray;
-            this.cmdBottomMid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmdBottomMid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdBottomMid.Location = new System.Drawing.Point(32, 36);
-            this.cmdBottomMid.Name = "cmdBottomMid";
-            this.cmdBottomMid.Size = new System.Drawing.Size(114, 123);
-            this.cmdBottomMid.TabIndex = 0;
-            this.cmdBottomMid.UseVisualStyleBackColor = false;
-            this.cmdBottomMid.Click += new System.EventHandler(this.cmdBottomMid_Click);
+            this.pbxBottomMidVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxBottomMidVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxBottomMidVeg.Name = "pbxBottomMidVeg";
+            this.pbxBottomMidVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxBottomMidVeg.TabIndex = 7;
+            this.pbxBottomMidVeg.TabStop = false;
+            // 
+            // lblBottomMidAllergy
+            // 
+            this.lblBottomMidAllergy.AutoSize = true;
+            this.lblBottomMidAllergy.Location = new System.Drawing.Point(98, 170);
+            this.lblBottomMidAllergy.Name = "lblBottomMidAllergy";
+            this.lblBottomMidAllergy.Size = new System.Drawing.Size(11, 16);
+            this.lblBottomMidAllergy.TabIndex = 7;
+            this.lblBottomMidAllergy.Text = " ";
+            // 
+            // lblBottomMidPrice
+            // 
+            this.lblBottomMidPrice.AutoSize = true;
+            this.lblBottomMidPrice.Location = new System.Drawing.Point(29, 170);
+            this.lblBottomMidPrice.Name = "lblBottomMidPrice";
+            this.lblBottomMidPrice.Size = new System.Drawing.Size(11, 16);
+            this.lblBottomMidPrice.TabIndex = 6;
+            this.lblBottomMidPrice.Text = " ";
             // 
             // lblBottomMidName
             // 
@@ -718,32 +733,17 @@
             this.lblBottomMidName.TabIndex = 1;
             this.lblBottomMidName.Text = " ";
             // 
-            // lblBottomMidPrice
+            // cmdBottomMid
             // 
-            this.lblBottomMidPrice.AutoSize = true;
-            this.lblBottomMidPrice.Location = new System.Drawing.Point(29, 170);
-            this.lblBottomMidPrice.Name = "lblBottomMidPrice";
-            this.lblBottomMidPrice.Size = new System.Drawing.Size(11, 16);
-            this.lblBottomMidPrice.TabIndex = 6;
-            this.lblBottomMidPrice.Text = " ";
-            // 
-            // lblBottomMidAllergy
-            // 
-            this.lblBottomMidAllergy.AutoSize = true;
-            this.lblBottomMidAllergy.Location = new System.Drawing.Point(98, 170);
-            this.lblBottomMidAllergy.Name = "lblBottomMidAllergy";
-            this.lblBottomMidAllergy.Size = new System.Drawing.Size(11, 16);
-            this.lblBottomMidAllergy.TabIndex = 7;
-            this.lblBottomMidAllergy.Text = " ";
-            // 
-            // pbxBottomMidVeg
-            // 
-            this.pbxBottomMidVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxBottomMidVeg.Location = new System.Drawing.Point(144, 0);
-            this.pbxBottomMidVeg.Name = "pbxBottomMidVeg";
-            this.pbxBottomMidVeg.Size = new System.Drawing.Size(36, 36);
-            this.pbxBottomMidVeg.TabIndex = 7;
-            this.pbxBottomMidVeg.TabStop = false;
+            this.cmdBottomMid.BackColor = System.Drawing.Color.DarkGray;
+            this.cmdBottomMid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdBottomMid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdBottomMid.Location = new System.Drawing.Point(32, 36);
+            this.cmdBottomMid.Name = "cmdBottomMid";
+            this.cmdBottomMid.Size = new System.Drawing.Size(114, 123);
+            this.cmdBottomMid.TabIndex = 0;
+            this.cmdBottomMid.UseVisualStyleBackColor = false;
+            this.cmdBottomMid.Click += new System.EventHandler(this.cmdBottomMid_Click);
             // 
             // pnlBottomRight
             // 
@@ -761,17 +761,32 @@
             this.pnlBottomRight.Size = new System.Drawing.Size(180, 204);
             this.pnlBottomRight.TabIndex = 5;
             // 
-            // cmdBottomRight
+            // pbxBottomRightVeg
             // 
-            this.cmdBottomRight.BackColor = System.Drawing.Color.DarkGray;
-            this.cmdBottomRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmdBottomRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdBottomRight.Location = new System.Drawing.Point(32, 36);
-            this.cmdBottomRight.Name = "cmdBottomRight";
-            this.cmdBottomRight.Size = new System.Drawing.Size(114, 123);
-            this.cmdBottomRight.TabIndex = 0;
-            this.cmdBottomRight.UseVisualStyleBackColor = false;
-            this.cmdBottomRight.Click += new System.EventHandler(this.cmdBottomRight_Click);
+            this.pbxBottomRightVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxBottomRightVeg.Location = new System.Drawing.Point(144, 0);
+            this.pbxBottomRightVeg.Name = "pbxBottomRightVeg";
+            this.pbxBottomRightVeg.Size = new System.Drawing.Size(36, 36);
+            this.pbxBottomRightVeg.TabIndex = 7;
+            this.pbxBottomRightVeg.TabStop = false;
+            // 
+            // lblBottomRightAllergy
+            // 
+            this.lblBottomRightAllergy.AutoSize = true;
+            this.lblBottomRightAllergy.Location = new System.Drawing.Point(98, 170);
+            this.lblBottomRightAllergy.Name = "lblBottomRightAllergy";
+            this.lblBottomRightAllergy.Size = new System.Drawing.Size(11, 16);
+            this.lblBottomRightAllergy.TabIndex = 7;
+            this.lblBottomRightAllergy.Text = " ";
+            // 
+            // lblBottomRightPrice
+            // 
+            this.lblBottomRightPrice.AutoSize = true;
+            this.lblBottomRightPrice.Location = new System.Drawing.Point(29, 170);
+            this.lblBottomRightPrice.Name = "lblBottomRightPrice";
+            this.lblBottomRightPrice.Size = new System.Drawing.Size(11, 16);
+            this.lblBottomRightPrice.TabIndex = 6;
+            this.lblBottomRightPrice.Text = " ";
             // 
             // lblBottomRightName
             // 
@@ -783,32 +798,17 @@
             this.lblBottomRightName.TabIndex = 1;
             this.lblBottomRightName.Text = " ";
             // 
-            // lblBottomRightPrice
+            // cmdBottomRight
             // 
-            this.lblBottomRightPrice.AutoSize = true;
-            this.lblBottomRightPrice.Location = new System.Drawing.Point(29, 170);
-            this.lblBottomRightPrice.Name = "lblBottomRightPrice";
-            this.lblBottomRightPrice.Size = new System.Drawing.Size(11, 16);
-            this.lblBottomRightPrice.TabIndex = 6;
-            this.lblBottomRightPrice.Text = " ";
-            // 
-            // lblBottomRightAllergy
-            // 
-            this.lblBottomRightAllergy.AutoSize = true;
-            this.lblBottomRightAllergy.Location = new System.Drawing.Point(98, 170);
-            this.lblBottomRightAllergy.Name = "lblBottomRightAllergy";
-            this.lblBottomRightAllergy.Size = new System.Drawing.Size(11, 16);
-            this.lblBottomRightAllergy.TabIndex = 7;
-            this.lblBottomRightAllergy.Text = " ";
-            // 
-            // pbxBottomRightVeg
-            // 
-            this.pbxBottomRightVeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxBottomRightVeg.Location = new System.Drawing.Point(144, 0);
-            this.pbxBottomRightVeg.Name = "pbxBottomRightVeg";
-            this.pbxBottomRightVeg.Size = new System.Drawing.Size(36, 36);
-            this.pbxBottomRightVeg.TabIndex = 7;
-            this.pbxBottomRightVeg.TabStop = false;
+            this.cmdBottomRight.BackColor = System.Drawing.Color.DarkGray;
+            this.cmdBottomRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdBottomRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdBottomRight.Location = new System.Drawing.Point(32, 36);
+            this.cmdBottomRight.Name = "cmdBottomRight";
+            this.cmdBottomRight.Size = new System.Drawing.Size(114, 123);
+            this.cmdBottomRight.TabIndex = 0;
+            this.cmdBottomRight.UseVisualStyleBackColor = false;
+            this.cmdBottomRight.Click += new System.EventHandler(this.cmdBottomRight_Click);
             // 
             // lbxCart
             // 
@@ -879,6 +879,7 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(746, 538);
             this.pnlMain.TabIndex = 3;
+            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
             // 
             // frmMain
             // 
@@ -905,9 +906,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxTopLeftVeg)).EndInit();
             this.pnlTopMid.ResumeLayout(false);
             this.pnlTopMid.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopMidVeg)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxTopMidVeg)).EndInit();
             this.pnlTopRight.ResumeLayout(false);
             this.pnlTopRight.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTopRightVeg)).EndInit();

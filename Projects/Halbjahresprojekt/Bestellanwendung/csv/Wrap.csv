@@ -7,7 +7,7 @@ N für Sesam-Samen und –erzeugnisse
 
 Name; Path; Price; Veggie(?); Allergene;
 
-Wrap; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Wrap\Wrap.png; 2,20; false; A;
-Chicken Wrap; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Wrap\Chickenwrap.png; 2,40; false; A;
-Greek Wrap; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Wrap\Greekwrap.png; 2,40; true; A G;
-Dürüm; C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Wrap\Dürüm.png; 2,30; false; A;
+Wrap; C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Wrap\Wrap.png; 2,20; false; A;
+Chicken Wrap; C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Wrap\Chickenwrap.png; 2,40; false; A;
+Greek Wrap; C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Wrap\Greekwrap.png; 2,40; true; A G;
+Dürüm; C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Wrap\Dürüm.png; 2,30; false; A;

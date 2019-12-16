@@ -41,8 +41,8 @@ namespace Bestellanwendung
             cmdRemove.Visible = false;
 
             CSVPharser pharser = new CSVPharser();
-            string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Burger.csv";
-            string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
+            string path = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Burger.csv";
+            string veg = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
 
             burger = pharser.CSVToList(path);
             burgerArray = burger.ToArray();
@@ -81,8 +81,8 @@ namespace Bestellanwendung
 
             sheet = "Burger";
             CSVPharser pharser = new CSVPharser();
-            string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Burger.csv";
-            string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
+            string path = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Burger.csv";
+            string veg = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
             #endregion
             burger = pharser.CSVToList(path);
             burgerArray = burger.ToArray();
@@ -175,8 +175,8 @@ namespace Bestellanwendung
 
             sheet = "Wrap";
             CSVPharser pharser = new CSVPharser();
-            string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Wrap.csv";
-            string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
+            string path = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Wrap.csv";
+            string veg = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
             #endregion
             wrap = pharser.CSVToList(path);
             wrapArray = wrap.ToArray();
@@ -268,8 +268,8 @@ namespace Bestellanwendung
 
             sheet = "Sidedishes";
             CSVPharser pharser = new CSVPharser();
-            string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\SideDishes.csv";
-            string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
+            string path = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\SideDishes.csv";
+            string veg = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
             #endregion
             sidedishes = pharser.CSVToList(path);
             sidedishesArray = sidedishes.ToArray();
@@ -361,8 +361,8 @@ namespace Bestellanwendung
 
             sheet = "Drinks";
             CSVPharser pharser = new CSVPharser();
-            string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Drinks.csv";
-            string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
+            string path = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Drinks.csv";
+            string veg = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
             #endregion
             drinks = pharser.CSVToList(path);
             drinksArray = drinks.ToArray();
@@ -448,8 +448,8 @@ namespace Bestellanwendung
 
             sheet = "Desserts";
             CSVPharser pharser = new CSVPharser();
-            string path = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Desserts.csv";
-            string veg = @"C:\repos\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
+            string path = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\csv\Desserts.csv";
+            string veg = @"C:\repos\1819\1819-sew-csharp-3AHIT-AdriHaun\Projects\Halbjahresprojekt\Bestellanwendung\Bilder\Veggie\Veggie.png";
             #endregion
             desserts = pharser.CSVToList(path);
             dessertsArray = desserts.ToArray();
@@ -665,6 +665,11 @@ namespace Bestellanwendung
         {
             Cart.Find(nahrung => nahrung.ToString() == lbxCart.SelectedItem.ToString()).Anzahl--;
             lbxMethods.WriteToListBox(Cart, lbxCart);
+        }
+
+        private void pnlMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
